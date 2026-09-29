@@ -6,13 +6,12 @@
       "subtitle": "٨ مواضيع من الأدب الحديث",
       "status": "open",
       "lessons": [
-        {"id":"haboubi","title":"بداية الأدب والحبوبي"},
         {"id":"sharqi","title":"علي الشرقي"},
         {"id":"hafiz","title":"حافظ إبراهيم"},
         {"id":"jawahiri","title":"الجواهري ونعيمة"},
         {"id":"badr","title":"بدر شاكر السياب"},
         {"id":"adonis","title":"أدونيس"},
-        {"id":"fidai","title":"فدائي والمقاومة"},
+        {"id":"fidai","title":"فدوئ والمقاومة"},
         {"id":"darwish","title":"محمود درويش"}
       ]
     },
