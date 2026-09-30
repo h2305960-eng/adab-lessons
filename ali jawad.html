@@ -1,0 +1,1224 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="المقالة والطاهر">
+<link rel="manifest" href='data:application/manifest+json,{"name":"المقالة · علي جواد الطاهر","short_name":"المقالة","start_url":".","display":"standalone","background_color":"#f6f2ea","theme_color":"#a63d40","orientation":"landscape"}'>
+<title>المقالة · علي جواد الطاهر · فرقٌ بين أن تدّعي الجديد وأن تقدر عليه</title>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
+<script>
+window.addEventListener('error',function(e){
+ if(!document.body)return;
+ var d=document.getElementById('errBox');
+ if(!d){d=document.createElement('div');d.id='errBox';
+  d.style.cssText='position:fixed;left:0;right:0;bottom:0;z-index:99999;background:#fff;color:#a00;padding:12px;font-family:monospace;white-space:pre-wrap;max-height:40%;overflow:auto;direction:ltr;border-top:2px solid #a00';
+  document.body.appendChild(d);}
+ d.textContent+='⚠ '+e.message+' (line '+e.lineno+')\n';
+});
+</script>
+<style>
+:root{--bg1:#f6f2ea;--bg2:#ede6d9;--bg3:#ded2bd;--bg4:#c6b795;--ink:#26221c;--ink2:#4a443a;--ink3:#6e675c;
+--gold:#a63d40;--gold2:#7c2b2e;--goldS:#c96a6d;--violet:#2b4c7e;--violet2:#1d3557;
+--gbg:rgba(246,242,234,.6);--gbd:rgba(166,61,64,.24);--gbd2:rgba(255,255,255,.92);--blur:blur(14px) saturate(130%);--gsh:0 14px 38px rgba(38,34,28,.14);--k:1}
+html[data-theme="dark"]{--bg1:#191713;--bg2:#211e19;--bg3:#2b2721;--bg4:#3a342b;--ink:#f2ede3;--ink2:#d6cdbd;--ink3:#a89e8d;
+--gold:#c96a6d;--gold2:#e09496;--goldS:#a63d40;--violet:#7ea0d0;--violet2:#a8c0e0;
+--gbg:rgba(43,39,33,.55);--gbd:rgba(201,106,109,.32);--gbd2:rgba(255,255,255,.14);--gsh:0 14px 38px rgba(0,0,0,.5)}
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{height:100%;overflow:hidden;touch-action:pan-y}
+body{font-family:'Tajawal',sans-serif;color:var(--ink);line-height:1.8;overscroll-behavior:none;-webkit-user-select:none;user-select:none;
+background:linear-gradient(180deg,var(--bg1) 0%,var(--bg2) 40%,var(--bg3) 80%,var(--bg4) 100%);background-attachment:fixed}
+.glass,.fab,.edgeMenu,.rail .track,.zoomframe,.zoomclose,.tip,.drawer,.wcap,.quiz-veil,.jz-veil,.navPanel{-webkit-backdrop-filter:blur(14px) saturate(130%);backdrop-filter:blur(14px) saturate(130%)}
+html[data-theme="dark"] .glass::before{background:radial-gradient(ellipse,rgba(255,255,255,.08),transparent 68%)}
+html[data-theme="dark"] .sun{background:radial-gradient(circle,rgba(201,106,109,.18),transparent 70%)}
+html[data-theme="dark"] .cloud{background:radial-gradient(closest-side,rgba(126,160,208,.20),transparent 72%)}
+html[data-theme="dark"] .lt{color:rgba(201,106,109,.42);background:rgba(43,39,33,.5);border-color:rgba(201,106,109,.32)}
+html[data-theme="dark"] .card-in{background:transparent}
+html[data-theme="dark"] .hs-parchment{background:linear-gradient(160deg,#2b2721,#211e19 60%,#191713)}
+html[data-theme="dark"] .hs-line{color:#e8e0d2;border-bottom-color:rgba(201,106,109,.28)}
+html[data-theme="dark"] .hs-banner{background:linear-gradient(120deg,#a63d40,#c96a6d);color:#f6f2ea}
+html[data-theme="dark"] .qz-opt,html[data-theme="dark"] .pz-chip,html[data-theme="dark"] .jz-piece{background:rgba(43,39,33,.6);color:var(--ink)}
+html[data-theme="dark"] .var,html[data-theme="dark"] .ditem,html[data-theme="dark"] .np-item,html[data-theme="dark"] .em-item{background:rgba(43,39,33,.5)}
+html[data-theme="dark"] .tip{background:rgba(25,23,19,.95)}
+html[data-theme="dark"] .watermark{color:rgba(201,106,109,.22)}
+html[data-theme="dark"] .fab,html[data-theme="dark"] .edgeMenu,html[data-theme="dark"] .navPanel{background:rgba(43,39,33,.85)}
+html[data-theme="dark"] .seg{background:linear-gradient(transparent 62%,rgba(201,106,109,.26) 62%)}
+html[data-theme="dark"] .seg.act{background:rgba(201,106,109,.32);color:var(--ink);box-shadow:0 0 0 2px rgba(201,106,109,.78)}
+html[data-theme="dark"] .seg.seen:not(.act){background:linear-gradient(transparent 62%,rgba(201,106,109,.46) 62%)}
+html[data-theme="dark"] .metarow,html[data-theme="dark"] .tfrow,html[data-theme="dark"] .tlcard,html[data-theme="dark"] .frow,html[data-theme="dark"] .tlslot{background:rgba(43,39,33,.5)}
+html[data-theme="dark"] .memcard .fc{background:rgba(43,39,33,.92);color:var(--ink)}
+html[data-theme="dark"] .sjpiece{background:rgba(43,39,33,.6);color:var(--ink)}
+html[data-theme="dark"] .courtpara{background:rgba(43,39,33,.5)}
+html[data-theme="dark"] .plate .it{background:rgba(43,39,33,.72);color:var(--ink)}
+.sun{position:fixed;top:-140px;left:-80px;width:420px;height:420px;border-radius:50%;pointer-events:none;z-index:0;background:radial-gradient(circle,rgba(166,61,64,.22),rgba(166,61,64,.1) 45%,transparent 70%);filter:blur(20px);-webkit-filter:blur(20px)}
+.cloud{position:fixed;pointer-events:none;z-index:1;filter:blur(32px);-webkit-filter:blur(32px);background:radial-gradient(closest-side,rgba(255,255,255,.72),transparent 72%);animation:drift linear infinite}
+@keyframes drift{0%{transform:translateX(-30vw)}100%{transform:translateX(125vw)}}
+.letters{position:fixed;top:0;right:0;bottom:0;left:0;overflow:hidden;pointer-events:none;z-index:1}
+.lt{position:absolute;font-weight:800;color:rgba(124,43,46,.5);background:rgba(255,255,255,.48);border:1px solid rgba(255,255,255,.85);border-radius:18px;-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center;-webkit-justify-content:center;justify-content:center;animation:fl linear infinite}
+@keyframes fl{0%{transform:translateY(110vh) rotate(0)}100%{transform:translateY(-20vh) rotate(320deg)}}
+.glass{background:var(--gbg);border:1px solid var(--gbd);border-radius:20px;position:relative;overflow:hidden;box-shadow:var(--gsh),inset 0 1px rgba(255,255,255,.95)}
+.glass::before{content:'';position:absolute;top:-45%;right:-25%;width:65%;height:90%;background:radial-gradient(ellipse,rgba(255,255,255,.72),transparent 68%);pointer-events:none}
+.orn-c::after{content:'';position:absolute;top:7px;right:7px;bottom:7px;left:7px;border:1px solid rgba(166,61,64,.32);border-radius:14px;pointer-events:none}
+.orn-c .corner{position:absolute;width:16px;height:16px;color:var(--gold);font-size:11px;line-height:16px;text-align:center;z-index:3;pointer-events:none}
+.corner.tl{top:2px;right:2px}.corner.tr{top:2px;left:2px}.corner.bl{bottom:2px;right:2px}.corner.br{bottom:2px;left:2px}
+.seal{position:fixed;bottom:10px;left:22px;right:auto;top:auto;z-index:70;width:56px;height:56px;border-radius:50%;border:3px double rgba(124,43,46,.85);display:-webkit-flex;display:flex;-webkit-flex-direction:column;flex-direction:column;-webkit-align-items:center;align-items:center;-webkit-justify-content:center;justify-content:center;transform:rotate(-10deg);color:#7c2b2e;background:rgba(255,255,255,.58);box-shadow:0 6px 14px rgba(124,43,46,.2);animation:stamp .8s cubic-bezier(.2,1.6,.4,1) both;pointer-events:none}
+.seal .s1,.seal .s3{display:none}
+.seal .s2{font-size:.5rem;font-weight:800;line-height:1.3;text-align:center}
+@keyframes stamp{0%{opacity:0;transform:rotate(-35deg) scale(1.7)}100%{opacity:1;transform:rotate(-10deg) scale(1)}}
+.watermark{position:fixed;top:10px;left:58px;z-index:1;pointer-events:none;font-weight:900;font-size:clamp(1.7rem,4vw,2.9rem);color:rgba(124,43,46,.22);transform:rotate(-3deg)}
+.fab{position:fixed;top:10px;right:10px;z-index:145;width:46px;height:46px;border-radius:16px;border:1px solid var(--gbd);background:rgba(255,255,255,.74);font-size:1.25rem;cursor:pointer;box-shadow:var(--gsh);display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center;-webkit-justify-content:center;justify-content:center;transition:.25s}
+.fab.open{background:linear-gradient(135deg,var(--goldS),var(--gold))}
+.edgeMenu{position:fixed;top:0;bottom:0;right:0;width:min(230px,74vw);z-index:140;border-left:1px solid var(--gbd2);box-shadow:-14px 0 40px rgba(38,34,28,.18);transform:translateX(105%);transition:transform .4s cubic-bezier(.3,1.1,.35,1);display:-webkit-flex;display:flex;-webkit-flex-direction:column;flex-direction:column;padding:.7rem .6rem;overflow-y:auto;background:rgba(255,255,255,.92)}
+.edgeMenu.show{transform:translateX(0)}
+.em-item{display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center;gap:.6rem;background:rgba(255,255,255,.64);border:1px solid var(--gbd);border-radius:12px;padding:.5rem .7rem;margin-bottom:.35rem;cursor:pointer;font-family:'Tajawal';font-weight:700;font-size:.8rem;color:var(--ink2);transition:.2s;text-align:right}
+.em-item .ic{font-size:1rem;-webkit-flex:0 0 auto;flex:0 0 auto}
+.em-item:hover{border-color:var(--gold);color:var(--ink)}
+.em-sep{height:1px;background:linear-gradient(90deg,rgba(166,61,64,.4),transparent);margin:.3rem 0}
+.rail{position:fixed;left:0;top:0;bottom:0;transform:none;z-index:70;display:-webkit-flex;display:flex;-webkit-flex-direction:column;flex-direction:column;-webkit-align-items:center;align-items:center;width:16px;padding:.4rem 0;pointer-events:none}
+.rail .pct{writing-mode:vertical-rl;font-size:.55rem;font-weight:800;color:var(--gold2);padding:.2rem 0}
+.rail .track{position:relative;width:6px;-webkit-flex:1;flex:1;height:auto;border-radius:3px;background:rgba(255,255,255,.55);border:1px solid var(--gbd)}
+.rail .fill{position:absolute;bottom:0;left:0;right:0;height:0%;border-radius:3px;background:linear-gradient(0deg,var(--gold2),var(--goldS) 70%,#e09496);transition:height .8s}
+.rail .orb{position:absolute;left:50%;transform:translate(-50%,50%);bottom:0%;width:14px;height:14px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#fff,var(--goldS) 55%,var(--gold));box-shadow:0 0 0 3px rgba(255,255,255,.75);transition:bottom .8s}
+.rail .rlabel{writing-mode:vertical-rl;font-size:.5rem;font-weight:800;color:var(--gold2);letter-spacing:1px;opacity:.8}
+.qinner,.hubsum,.gate,.cover,.sintro,.end{zoom:var(--k,1)}
+.deck{position:fixed;top:0;right:0;bottom:0;left:0;z-index:5;display:-webkit-flex;display:flex;touch-action:pan-y;transform:translateX(calc(var(--idx,0)*100% + var(--drag,0px)))}
+.deck.anim{transition:transform .75s cubic-bezier(.3,1.25,.35,1)}
+.slide{-webkit-flex:0 0 100%;flex:0 0 100%;height:100%;display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center;-webkit-justify-content:center;justify-content:center;padding:74px 46px 46px 60px;transform:scale(.93);opacity:.4;transition:transform .75s,opacity .75s}
+.slide.act{transform:scale(1);opacity:1}
+.cover,.end,.sintro{text-align:center;max-width:660px;padding:2rem 2.4rem}
+.kick{display:inline-block;font-size:.68rem;font-weight:800;color:var(--gold2);background:rgba(43,76,126,.14);border:1px solid rgba(166,61,64,.4);border-radius:16px;padding:.25rem .95rem;margin-bottom:.8rem}
+.cover h1,.sintro h1{font-weight:900;font-size:clamp(1.9rem,4.6vw,3rem);line-height:1.7}
+.orn{color:var(--gold);opacity:.85;margin:.6rem 0;letter-spacing:2px;font-size:.8rem}
+.cover p,.sintro p{color:var(--ink2);font-size:.92rem;font-weight:500;max-width:500px;margin:0 auto .9rem}
+.stats{display:-webkit-flex;display:flex;gap:.55rem;-webkit-justify-content:center;justify-content:center;-webkit-flex-wrap:wrap;flex-wrap:wrap;margin-bottom:1.1rem}
+.stats span{background:rgba(255,255,255,.64);border:1px solid var(--gbd);border-radius:14px;padding:.35rem .9rem;font-size:.78rem;font-weight:700}
+.stats b{color:var(--gold2)}
+.swipe-hint{display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center;-webkit-justify-content:center;justify-content:center;gap:.9rem;color:var(--ink2);font-weight:800;font-size:.85rem;margin-top:.6rem}
+.sw-arrow{color:var(--gold);font-weight:900;font-size:1.5rem;display:inline-block;animation:sway 1.6s ease-in-out infinite}
+@keyframes sway{0%,100%{transform:translateX(0)}50%{transform:translateX(-22px)}}
+.sintro .sicon{font-size:2.6rem;display:block;margin-bottom:.4rem}
+.end .big-pct{font-weight:900;font-size:clamp(2.6rem,6vw,4rem);color:var(--gold)}
+.ebar{width:min(320px,80%);height:12px;border-radius:20px;background:rgba(255,255,255,.55);border:1px solid var(--gbd);margin:.8rem auto;overflow:hidden}
+.ebar i{display:block;height:100%;width:0%;border-radius:20px;background:linear-gradient(90deg,var(--gold2),var(--goldS));transition:width 1s}
+.ebtn{border:none;cursor:pointer;font-family:'Tajawal';font-weight:800;color:#fff;font-size:.85rem;padding:.6rem 1.7rem;border-radius:30px;margin-top:.8rem;background:linear-gradient(120deg,var(--gold),var(--gold2))}
+.qinner{display:grid;grid-template-columns:1.15fr .85fr;gap:1.1rem;width:min(1200px,100%);height:min(82vh,760px);-webkit-align-items:stretch;align-items:stretch}
+.layers{display:-webkit-flex;display:flex;-webkit-flex-direction:column;flex-direction:column;gap:.55rem;overflow-y:auto;padding-left:3px;touch-action:pan-y}
+.layer{padding:.95rem 1.15rem;-webkit-flex:none;flex:none}
+.ltag{display:-webkit-inline-flex;display:inline-flex;font-size:.62rem;font-weight:800;color:#fff;background:linear-gradient(120deg,var(--gold),var(--gold2));border-radius:11px;padding:.15rem .7rem;margin-bottom:.5rem}
+.qtext{font-weight:800;font-size:clamp(1.02rem,1.85vw,1.3rem);line-height:1.9}
+.varbtn{margin-top:.5rem;border:1px dashed rgba(166,61,64,.7);background:rgba(43,76,126,.12);color:var(--gold2);border-radius:11px;padding:.32rem .85rem;font-size:.7rem;font-weight:800;cursor:pointer;font-family:'Tajawal'}
+.varbox{max-height:0;overflow:hidden;transition:max-height .55s}
+.varbox.open{max-height:230px}
+.var{display:-webkit-flex;display:flex;gap:.45rem;background:rgba(255,255,255,.6);border:1px solid rgba(166,61,64,.3);border-radius:10px;padding:.35rem .7rem;margin-top:.4rem;font-size:.74rem;color:var(--ink2);opacity:0;transition:.4s}
+.varbox.open .var{opacity:1}
+.var i{font-style:normal;color:var(--gold)}
+.hint{font-size:.6rem;font-weight:700;color:var(--ink2);margin-bottom:.45rem;display:-webkit-flex;display:flex;gap:.4rem;-webkit-flex-wrap:wrap;flex-wrap:wrap}
+.legend{display:-webkit-inline-flex;display:inline-flex;-webkit-align-items:center;align-items:center;gap:.3rem}
+.dot-g{width:9px;height:9px;border-radius:3px;background:linear-gradient(transparent 55%,rgba(166,61,64,.7) 55%)}
+.dot-t{width:9px;height:9px;border-radius:50%;background:rgba(43,76,126,.68)}
+.answer{font-weight:500;font-size:clamp(.98rem,1.6vw,1.18rem);line-height:2.45;text-align:justify;max-width:62ch}
+.seg{cursor:pointer;border-radius:8px;padding:.02em .16em;transition:.28s;background:linear-gradient(transparent 62%,rgba(166,61,64,.22) 62%)}
+.seg.act{background:rgba(246,242,234,.95);box-shadow:0 0 0 2px rgba(166,61,64,.75)}
+.seg.seen:not(.act){background:linear-gradient(transparent 62%,rgba(166,61,64,.4) 62%)}
+.seg.pull{font-weight:800;font-size:1.06em;padding-left:.5rem;border-left:3px solid var(--gold)}
+.term{color:#fff;background:linear-gradient(120deg,var(--violet),var(--violet2));border-radius:8px;padding:.02em .4em;font-weight:800;cursor:pointer}
+.layers .divsep{display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center;gap:.6rem;color:var(--gold);opacity:.85}
+.layers .divsep::before,.layers .divsep::after{content:'';-webkit-flex:1;flex:1;height:1px;background:linear-gradient(90deg,transparent,rgba(166,61,64,.6),transparent)}
+.visual{position:relative;height:100%;display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center;-webkit-justify-content:center;justify-content:center}
+.wheelstage{display:-webkit-flex;display:flex;-webkit-flex-direction:column;flex-direction:column;-webkit-align-items:center;align-items:center;gap:.4rem}
+.pointer{font-size:1.35rem;color:var(--gold);z-index:6;line-height:1}
+.pointer.bounce{animation:bnc .6s cubic-bezier(.2,1.6,.4,1)}
+@keyframes bnc{0%{transform:translateY(-12px)}60%{transform:translateY(4px)}100%{transform:translateY(0)}}
+.wheelwrap{position:relative;width:min(350px,44vh);height:min(350px,44vh)}
+.ring{position:absolute;top:6%;right:6%;bottom:6%;left:6%;border-radius:50%;border:2px dashed rgba(166,61,64,.35);animation:spin 44s linear infinite}
+.ring2{position:absolute;top:14%;right:14%;bottom:14%;left:14%;border-radius:50%;border:1px solid rgba(166,61,64,.25)}
+@keyframes spin{to{transform:rotate(360deg)}}
+.wheel{position:absolute;top:0;right:0;bottom:0;left:0;--rot:0deg;transform:rotate(var(--rot));transition:transform 1s cubic-bezier(.34,1.2,.4,1)}
+.card{position:absolute;left:50%;top:50%;width:104px;height:78px;margin:-39px -52px;transform:rotate(var(--a)) translateY(var(--R,-120px))}
+.card-in{width:100%;height:100%;border-radius:12px;overflow:hidden;cursor:pointer;position:relative;transform:rotate(calc(-1*(var(--a) + var(--rot))));transition:transform 1s;border:3px solid rgba(255,255,255,.95);box-shadow:0 10px 26px rgba(38,34,28,.22);background:transparent}
+.card-in img{width:100%;height:100%;object-fit:cover;display:block;-webkit-user-drag:none}
+.card-in .cn{position:absolute;bottom:3px;right:4px;font-size:.55rem;font-weight:900;color:#fff;background:rgba(38,34,28,.72);border-radius:6px;padding:0 .35rem}
+.card-in.sel{border-color:var(--gold);box-shadow:0 0 0 4px rgba(166,61,64,.4)}
+.hub{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:82px;height:82px;border-radius:50%;background:rgba(255,255,255,.64);border:1px solid var(--gbd2);display:-webkit-flex;display:flex;-webkit-flex-direction:column;flex-direction:column;-webkit-align-items:center;align-items:center;-webkit-justify-content:center;justify-content:center;z-index:4}
+.hub b{font-size:1.3rem;font-weight:900;color:var(--gold2);line-height:1}.hub span{font-size:.53rem;font-weight:800;color:var(--gold2)}
+.wcap{font-size:.7rem;font-weight:700;background:rgba(255,255,255,.6);border:1px solid var(--gbd);border-radius:12px;padding:.2rem .9rem}
+.wcap b{color:var(--gold2)}
+.zoomframe{position:absolute;top:0;right:0;bottom:0;left:0;z-index:8;border-radius:18px;overflow:hidden;cursor:pointer;border:1px solid var(--gbd2);background:transparent;opacity:0;pointer-events:none;transform:scale(.85);transition:opacity .45s,transform .5s cubic-bezier(.25,1.3,.4,1)}
+.zoomframe.show{opacity:1;pointer-events:auto;transform:scale(1)}
+.zoomimg{position:absolute;top:0;right:0;bottom:0;left:0;width:100%;height:100%;object-fit:cover}
+.zoomcap{position:absolute;bottom:0;left:0;right:0;padding:.6rem .85rem;display:-webkit-flex;display:flex;-webkit-justify-content:space-between;justify-content:space-between;gap:.6rem;background:linear-gradient(transparent,rgba(38,34,28,.68))}
+.zoomtxt{color:#fff;font-size:.78rem;font-weight:600;-webkit-flex:1;flex:1;line-height:1.55}
+.zoombadge{color:#fff;background:linear-gradient(135deg,var(--gold),var(--gold2));font-size:.6rem;font-weight:900;border-radius:9px;padding:.18rem .6rem;white-space:nowrap}
+.zoomclose{position:absolute;top:10px;left:10px;color:#fff;background:rgba(38,34,28,.55);font-size:.62rem;font-weight:800;border-radius:10px;padding:.25rem .6rem}
+.navPanel{position:fixed;top:0;bottom:0;right:0;width:min(300px,86vw);z-index:130;background:rgba(255,255,255,.9);border-left:1px solid var(--gbd2);box-shadow:-14px 0 40px rgba(38,34,28,.16);transform:translateX(105%);transition:transform .45s cubic-bezier(.3,1.1,.35,1);display:-webkit-flex;display:flex;-webkit-flex-direction:column;flex-direction:column;padding:.8rem}
+.navPanel.open{transform:translateX(0)}
+.np-head{display:-webkit-flex;display:flex;-webkit-justify-content:space-between;justify-content:space-between;-webkit-align-items:center;align-items:center;margin-bottom:.5rem}
+.np-head h3{font-size:.95rem;font-weight:900}
+.dclose{width:32px;height:32px;border-radius:50%;border:1px solid var(--gbd);background:rgba(255,255,255,.75);font-weight:900;cursor:pointer}
+.np-prog{display:-webkit-flex;display:flex;-webkit-justify-content:space-between;justify-content:space-between;font-size:.7rem;font-weight:800;color:var(--gold2);background:rgba(43,76,126,.12);border:1px solid var(--gbd);border-radius:10px;padding:.3rem .6rem;margin-bottom:.5rem}
+.np-list{-webkit-flex:1;flex:1;overflow-y:auto;display:-webkit-flex;display:flex;-webkit-flex-direction:column;flex-direction:column;gap:.35rem}
+.np-item{display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center;gap:.5rem;background:rgba(255,255,255,.64);border:1px solid var(--gbd);border-radius:12px;padding:.45rem .6rem;cursor:pointer;font-size:.75rem;font-weight:700;color:var(--ink2);transition:.2s}
+.np-item .no{-webkit-flex:0 0 auto;flex:0 0 auto;width:22px;height:22px;border-radius:7px;background:rgba(166,61,64,.16);color:var(--gold2);display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center;-webkit-justify-content:center;justify-content:center;font-size:.65rem;font-weight:900}
+.np-item .ti{-webkit-flex:1;flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.np-item .st{font-size:.6rem}
+.np-item.cur{border-color:var(--gold);background:rgba(43,76,126,.14);color:var(--ink)}
+.np-item.vis .no{background:rgba(34,197,94,.22);color:#177245}
+.np-item.lock{opacity:.45}
+.drawer{position:fixed;top:0;bottom:0;left:0;width:min(320px,86vw);z-index:120;padding:1rem;background:rgba(255,255,255,.74);-webkit-backdrop-filter:blur(22px);backdrop-filter:blur(22px);border-right:1px solid var(--gbd2);transform:translateX(-105%);transition:transform .5s;display:-webkit-flex;display:flex;-webkit-flex-direction:column;flex-direction:column}
+.drawer.open{transform:translateX(0)}
+.dhead{display:-webkit-flex;display:flex;-webkit-justify-content:space-between;justify-content:space-between;-webkit-align-items:center;align-items:center;margin-bottom:.7rem}
+.dhead h3{font-size:.95rem;font-weight:900}
+.dlist{-webkit-flex:1;flex:1;overflow-y:auto;display:-webkit-flex;display:flex;-webkit-flex-direction:column;flex-direction:column;gap:.5rem}
+.ditem{background:rgba(255,255,255,.68);border:1px solid var(--gbd);border-radius:14px;overflow:hidden}
+.dterm{width:100%;border:none;background:none;font-family:'Tajawal';font-weight:800;font-size:.82rem;color:var(--violet2);padding:.6rem .8rem;text-align:right;cursor:pointer;display:-webkit-flex;display:flex;-webkit-justify-content:space-between;justify-content:space-between}
+.dterm .car{transition:.3s;color:var(--gold)}
+.ditem.open .dterm .car{transform:rotate(90deg)}
+.ddef{max-height:0;overflow:hidden;transition:max-height .4s;font-size:.74rem;color:var(--ink2);line-height:1.7}
+.ditem.open .ddef{max-height:140px}
+.ddef div{padding:0 .8rem .6rem}
+.tip{position:fixed;z-index:200;max-width:280px;padding:.7rem .85rem;border-radius:14px;background:rgba(255,255,255,.97);border:1px solid var(--gbd2);opacity:0;pointer-events:none;transform:translateY(8px);transition:.3s}
+.tip.show{opacity:1;transform:none}
+.tip b{display:block;color:var(--violet2);font-size:.82rem;font-weight:900;margin-bottom:.25rem}
+.tip p{font-size:.72rem;color:var(--ink2);line-height:1.65}
+.press{position:relative;overflow:hidden}
+.ripple{position:absolute;border-radius:50%;background:rgba(166,61,64,.3);transform:scale(0);animation:rip .6s ease-out forwards;pointer-events:none}
+@keyframes rip{to{transform:scale(3.2);opacity:0}}
+.rotate-overlay{position:fixed;top:0;right:0;bottom:0;left:0;z-index:400;display:none;-webkit-align-items:center;align-items:center;-webkit-justify-content:center;justify-content:center;-webkit-flex-direction:column;flex-direction:column;text-align:center;gap:.6rem;background:linear-gradient(180deg,var(--bg1),var(--bg3))}
+.rotate-overlay .rot-icon{font-size:3.4rem;animation:rot 1.8s ease-in-out infinite}
+@keyframes rot{0%,20%{transform:rotate(0)}55%,100%{transform:rotate(90deg)}}
+.rotate-overlay h2{font-weight:900;font-size:1.4rem}.rotate-overlay p{font-size:.9rem;color:var(--ink2)}
+@media (orientation:portrait) and (pointer:coarse){.rotate-overlay{display:-webkit-flex;display:flex}}
+.hubsum{display:grid;grid-template-columns:1.15fr .85fr;gap:2rem;width:min(1150px,100%);-webkit-align-items:center;align-items:center;height:min(82vh,720px)}
+.hs-parchment{position:relative;background:linear-gradient(160deg,rgba(246,242,234,.97),rgba(237,230,217,.95) 60%,rgba(222,210,189,.95));border-radius:6px;box-shadow:0 24px 60px rgba(38,34,28,.35);padding:2.4rem 1.8rem 1.6rem}
+.hs-banner{position:absolute;top:-14px;right:24px;background:linear-gradient(120deg,#2b4c7e,#7ea0d0);color:#f6f2ea;font-weight:900;font-size:.95rem;padding:.5rem 1.2rem}
+.hs-body{margin-top:.6rem;max-height:56vh;overflow-y:auto;touch-action:pan-y}
+.hs-line{color:#26221c;font-weight:600;font-size:.95rem;line-height:2;padding:.5rem .7rem;border-radius:10px;cursor:pointer;border-bottom:1px dashed rgba(43,76,126,.25)}
+.hs-line.on{background:rgba(166,61,64,.10);box-shadow:inset 3px 0 0 var(--gold)}
+.hs-photo{position:relative;min-height:min(460px,62vh);display:-webkit-flex;display:flex;-webkit-align-items:flex-start;align-items:flex-start;-webkit-justify-content:center;justify-content:center}
+.hs-halo{position:absolute;top:2%;left:50%;transform:translateX(-50%);width:min(270px,36vh);height:min(270px,36vh);border-radius:50%;background:radial-gradient(circle,#ded2bd 0%,#c6b795 55%,rgba(198,183,149,0) 72%)}
+.hs-img{position:absolute;z-index:2;width:min(300px,44vh);height:min(400px,58vh);background:transparent}
+.hs-img img{width:100%;height:100%;object-fit:cover;object-position:top center;-webkit-mask-image:linear-gradient(to bottom,#000 60%,transparent 97%);mask-image:linear-gradient(to bottom,#000 60%,transparent 97%);filter:grayscale(.4) contrast(1.08);-webkit-filter:grayscale(.4) contrast(1.08)}
+.hs-dates{position:absolute;bottom:6%;left:8%;z-index:3;background:linear-gradient(135deg,var(--goldS),var(--gold));color:#fff;font-weight:900;border:4px solid #fff;border-radius:14px;padding:.4rem .9rem}
+.gate{max-width:780px;width:100%;padding:1.5rem 2rem;max-height:84vh;overflow-y:auto;text-align:center;touch-action:pan-y}
+.pz-title{font-weight:900;font-size:1.15rem;color:var(--gold2);margin:.4rem 0 .8rem}
+.pz-cols{display:grid;grid-template-columns:1fr 1fr;gap:.7rem}
+.pz-col{display:-webkit-flex;display:flex;-webkit-flex-direction:column;flex-direction:column;gap:.4rem}
+.pz-chip{border:1px solid var(--gbd);background:rgba(255,255,255,.64);border-radius:12px;padding:.45rem .8rem;cursor:pointer;font-family:'Tajawal';font-weight:700;font-size:.78rem;color:var(--ink)}
+.pz-chip.sel{border-color:var(--gold);background:rgba(43,76,126,.14)}
+.pz-chip.ok{background:rgba(34,197,94,.16);border-color:#22c55e;color:#14532d;pointer-events:none}
+.pz-chip.shake{animation:shake .4s}
+@keyframes shake{0%,100%{transform:translateX(0)}25%{transform:translateX(-6px)}75%{transform:translateX(6px)}}
+.pz-success{padding:1.4rem 0;text-align:center}.pz-success .big{font-size:3rem}.pz-success p{font-weight:800;color:#22c55e;margin-top:.5rem}
+.kkeys{display:-webkit-flex;display:flex;gap:.4rem;-webkit-justify-content:center;justify-content:center;margin-bottom:.6rem}
+.kkey{font-size:1.2rem;filter:grayscale(1);opacity:.5;transition:.3s}
+.kkey.lit{filter:none;opacity:1;transform:scale(1.15)}
+.frow{display:-webkit-flex;display:flex;-webkit-flex-wrap:wrap;flex-wrap:wrap;gap:.4rem;-webkit-align-items:center;align-items:center;background:rgba(255,255,255,.55);border:1px solid var(--gbd);border-radius:12px;padding:.4rem .6rem;margin-bottom:.4rem}
+.fsent{font-weight:700;font-size:.8rem;color:var(--ink)}
+.blank{color:var(--violet2);background:rgba(166,61,64,.12);border-radius:6px;padding:0 .3rem}
+.blank.filled{color:#177245;background:rgba(34,197,94,.18)}
+.fopts{display:-webkit-flex;display:flex;gap:.3rem;-webkit-flex-wrap:wrap;flex-wrap:wrap}
+.tfrow{display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center;gap:.5rem;background:rgba(255,255,255,.55);border:1px solid var(--gbd);border-radius:12px;padding:.4rem .6rem;margin-bottom:.4rem}
+.tfrow .st{-webkit-flex:1;flex:1;font-size:.78rem;font-weight:700;color:var(--ink)}
+.tfrow.rev .st{color:var(--gold2)}
+.tfbtn{border:1px solid var(--gbd);background:rgba(255,255,255,.64);border-radius:10px;padding:.3rem .8rem;font-weight:800;font-size:.75rem;cursor:pointer;color:var(--ink)}
+.tfbtn.ok{background:rgba(34,197,94,.16);border-color:#22c55e;color:#14532d}
+.tfbtn.no{background:rgba(239,68,68,.14);border-color:#ef4444;color:#7f1d1d}
+.tlaxis{display:-webkit-flex;display:flex;gap:.4rem;position:relative;padding:1.4rem 0 .6rem}
+.tlaxis::before{content:'';position:absolute;left:2%;right:2%;top:.6rem;height:3px;background:linear-gradient(90deg,var(--gold),var(--violet));border-radius:2px}
+.tlslot{-webkit-flex:1;flex:1;min-height:76px;border:2px dashed rgba(43,76,126,.5);border-radius:12px;background:rgba(43,76,126,.06);position:relative;padding:.9rem .3rem .3rem;text-align:center;cursor:pointer}
+.tlslot .yr{position:absolute;top:-.9rem;left:50%;transform:translateX(-50%);background:var(--gold);color:#f6f2ea;font-weight:900;font-size:.65rem;border-radius:8px;padding:.1rem .5rem}
+.tlslot .ev{font-size:.66rem;font-weight:700;color:var(--ink2)}
+.tlslot.filled{border-style:solid;border-color:#22c55e;background:rgba(34,197,94,.12)}
+.tlslot.filled .ev{color:var(--ink)}
+.tlslot.shake{animation:shake .4s}
+.tltray{display:-webkit-flex;display:flex;-webkit-flex-wrap:wrap;flex-wrap:wrap;gap:.4rem;-webkit-justify-content:center;justify-content:center;margin-top:.7rem}
+.tlcard{border:1px solid var(--gbd);background:rgba(255,255,255,.64);border-radius:12px;padding:.4rem .7rem;font-size:.72rem;font-weight:700;color:var(--ink);cursor:grab;touch-action:none;font-family:'Tajawal'}
+.tlcard.sel{border-color:var(--gold);box-shadow:0 0 0 3px rgba(166,61,64,.35)}
+.tlcard.drag{position:fixed;z-index:500;pointer-events:none;opacity:.95}
+.tlcard.shake{animation:shake .4s}
+.memgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:.4rem}
+.memcard{position:relative;height:66px;border-radius:12px;border:1px solid var(--gbd);background:linear-gradient(135deg,var(--violet),var(--violet2));cursor:pointer;perspective:600px}
+.memcard .bk{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#fff;font-size:1.1rem}
+.memcard .fc{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;padding:.2rem;font-size:.6rem;font-weight:800;color:var(--ink);background:rgba(255,255,255,.95);border-radius:12px;opacity:0;transform:rotateY(90deg);transition:.3s;text-align:center}
+.memcard.flip .fc,.memcard.ok .fc{opacity:1;transform:none}
+.memcard.ok{border-color:#22c55e;cursor:default}
+.sjcol{display:flex;flex-direction:column;gap:.4rem}
+.sjslot{min-height:44px;border:2px dashed rgba(43,76,126,.5);border-radius:12px;background:rgba(43,76,126,.06);display:flex;align-items:center;gap:.4rem;padding:.3rem .5rem;font-size:.7rem;color:var(--ink2);cursor:pointer}
+.sjslot .no{flex:0 0 auto;width:20px;height:20px;border-radius:7px;background:rgba(166,61,64,.18);color:var(--gold2);display:flex;align-items:center;justify-content:center;font-size:.6rem;font-weight:900}
+.sjslot .tx{flex:1}
+.sjslot.filled{border-style:solid;border-color:#22c55e;background:rgba(34,197,94,.12);color:var(--ink);font-weight:700}
+.sjslot.shake{animation:shake .4s}
+.sjtray{display:flex;flex-wrap:wrap;gap:.4rem;justify-content:center;margin-top:.5rem}
+.sjpiece{border:1px solid var(--gbd);background:rgba(255,255,255,.68);border-radius:12px;padding:.4rem .7rem;font-size:.7rem;font-weight:700;color:var(--ink);cursor:grab;touch-action:none;font-family:'Tajawal'}
+.sjpiece.sel{border-color:var(--gold);box-shadow:0 0 0 3px rgba(166,61,64,.35)}
+.sjpiece.drag{position:fixed;z-index:500;pointer-events:none;opacity:.95}
+.sjpiece.shake{animation:shake .4s}
+.courtpara{background:rgba(255,255,255,.64);border:1px solid var(--gbd);border-radius:12px;padding:.7rem .9rem;font-size:.8rem;line-height:2.1;color:var(--ink);text-align:right}
+.suspect{color:var(--gold2);background:rgba(43,76,126,.14);border-bottom:2px dashed var(--gold);border-radius:6px;padding:0 .25rem;cursor:pointer;font-weight:800}
+.suspect.fixed{color:#177245;background:rgba(34,197,94,.15);border-bottom-style:solid;border-color:#22c55e;cursor:default}
+.courtopts{display:flex;flex-wrap:wrap;gap:.3rem;justify-content:center;align-items:center;margin-top:.5rem}
+.scalewrap{display:flex;gap:.6rem;align-items:stretch;justify-content:center;position:relative;padding-top:1.4rem}
+.scalewrap::before{content:'';position:absolute;top:.55rem;left:10%;right:10%;height:3px;background:linear-gradient(90deg,var(--gold),var(--violet));border-radius:2px}
+.plate{position:relative;flex:1;min-height:120px;border:2px dashed rgba(43,76,126,.5);border-radius:14px;background:rgba(43,76,126,.06);padding:1.9rem .4rem .4rem;text-align:center;cursor:pointer}
+.plate .pn{position:absolute;top:.35rem;left:50%;transform:translateX(-50%);background:var(--gold);color:#f6f2ea;font-weight:900;font-size:.7rem;border-radius:8px;padding:.1rem .6rem}
+.plate .it{display:block;font-size:.64rem;font-weight:700;color:var(--ink);background:rgba(255,255,255,.78);border:1px solid var(--gbd);border-radius:8px;padding:.2rem .4rem;margin:.2rem auto;max-width:92%}
+.plate.shake{animation:shake .4s}
+.modcard{display:flex;align-items:center;gap:.5rem;flex-wrap:wrap;background:linear-gradient(120deg,rgba(166,61,64,.12),rgba(43,76,126,.12));border:1px solid var(--gbd);border-radius:12px;padding:.4rem .7rem;margin-bottom:.5rem;font-size:.72rem;font-weight:800;color:var(--violet2)}
+.modcard .mi{font-size:1.1rem}
+.modcard .gt{margin-inline-start:auto;background:var(--gold);color:#f6f2ea;border-radius:8px;padding:.1rem .5rem;font-weight:900;font-size:.75rem}
+.mod-fog .pz-chip,.mod-fog .tfrow,.mod-fog .fsent,.mod-fog .tlcard,.mod-fog .sjpiece,.mod-fog .scard,.mod-fog .memcard,.mod-fog .suspect{filter:blur(5px);transition:filter .3s}
+.mod-fog .rev{filter:none}
+.mod-spin .sjtray>*,.mod-spin .tltray>*{display:inline-block}
+.mod-spin .sjtray>*:nth-child(odd),.mod-spin .tltray>*:nth-child(odd){transform:rotate(-2.5deg)}
+.mod-spin .sjtray>*:nth-child(even),.mod-spin .tltray>*:nth-child(even){transform:rotate(2.5deg)}
+.quiz-veil,.jz-veil{position:fixed;top:0;right:0;bottom:0;left:0;z-index:330;display:none;-webkit-align-items:center;align-items:center;-webkit-justify-content:center;justify-content:center;padding:12px;background:rgba(25,23,19,.55);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
+.quiz-veil.show,.jz-veil.show{display:-webkit-flex;display:flex}
+.quiz-card,.jz-card{width:min(96vw,860px);max-height:92vh;overflow-y:auto;padding:1.2rem 1.4rem;display:-webkit-flex;display:flex;-webkit-flex-direction:column;flex-direction:column;gap:.7rem;touch-action:pan-y}
+.qz-kick{display:inline-block;font-size:.66rem;font-weight:800;color:#fff;background:linear-gradient(120deg,#a63d40,#7c2b2e);border-radius:12px;padding:.22rem .8rem}
+.qz-title{font-weight:900;font-size:1.1rem}
+.qz-lock{text-align:center;padding:1.2rem 0}.qz-lock .lk{font-size:3rem}.qz-lock p{color:var(--ink2);font-weight:600;margin:.6rem 0;line-height:2}
+.qz-q{font-weight:800;font-size:1.05rem;background:rgba(255,255,255,.55);border:1px solid var(--gbd);border-radius:12px;padding:.6rem .9rem;line-height:1.8}
+.qz-opts{display:-webkit-flex;display:flex;-webkit-flex-direction:column;flex-direction:column;gap:.5rem}
+.qz-opt{border:1px solid var(--gbd);background:rgba(255,255,255,.6);border-radius:12px;padding:.6rem .9rem;cursor:pointer;font-family:'Tajawal';font-weight:600;color:var(--ink);text-align:right}
+.qz-opt.ok{background:rgba(34,197,94,.16);border-color:#22c55e;color:#14532d}
+.qz-opt.no{background:rgba(239,68,68,.14);border-color:#ef4444;color:#7f1d1d}
+.qz-foot{display:-webkit-flex;display:flex;-webkit-justify-content:space-between;justify-content:space-between;-webkit-align-items:center;align-items:center;margin-top:1rem}
+.qz-next{border:none;cursor:pointer;font-family:'Tajawal';font-weight:800;color:#fff;background:linear-gradient(120deg,#a63d40,#7c2b2e);border-radius:12px;padding:.5rem 1.4rem}
+.qz-score{text-align:center;padding:1rem 0}.qz-score .num{font-weight:900;font-size:2.4rem;color:var(--gold2)}.qz-score p{font-weight:700;color:var(--ink2);margin:.4rem 0 1rem}
+.qz-close{border:none;background:rgba(255,255,255,.55);border-radius:50%;width:32px;height:32px;cursor:pointer;font-weight:900;color:var(--ink);margin-left:auto}
+.qz-ex{margin-top:.5rem;font-size:.75rem;font-weight:700;color:var(--gold2);background:rgba(43,76,126,.12);border:1px solid var(--gbd);border-radius:10px;padding:.4rem .6rem}
+.eq-stars{font-size:1.6rem;letter-spacing:.2rem;margin:.3rem 0}
+.sealbadge{display:inline-block;background:linear-gradient(120deg,#2b4c7e,#a63d40);color:#f6f2ea;font-weight:900;font-size:.8rem;border-radius:12px;padding:.3rem .9rem;margin:.4rem 0}
+.metarow{display:-webkit-flex;display:flex;-webkit-justify-content:space-between;justify-content:space-between;gap:.5rem;background:rgba(255,255,255,.55);border:1px solid var(--gbd);border-radius:12px;padding:.4rem .6rem;margin-bottom:.35rem;font-size:.72rem}
+.mn{font-weight:800;color:var(--ink)}
+.ms{color:var(--ink2);font-weight:700}
+.jz-head{display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center;gap:.6rem;-webkit-flex-wrap:wrap;flex-wrap:wrap}
+.jz-stage{font-weight:900;color:var(--violet2);background:rgba(166,61,64,.12);border:1px solid rgba(166,61,64,.4);border-radius:10px;padding:.2rem .7rem;font-size:.8rem}
+.jz-stars{font-weight:800;color:var(--gold2);font-size:.85rem}.jz-mist{font-weight:700;color:#b3403f;font-size:.8rem}
+.jz-strip{display:-webkit-flex;display:flex;-webkit-flex-wrap:wrap;flex-wrap:wrap;gap:.5rem;min-height:70px}
+.jz-slot{position:relative;-webkit-flex:1 1 160px;flex:1 1 160px;min-height:64px;border:2px dashed rgba(43,76,126,.5);border-radius:12px;display:-webkit-flex;display:flex;-webkit-align-items:center;align-items:center;-webkit-justify-content:center;justify-content:center;padding:.6rem .9rem;color:rgba(43,76,126,.65);font-weight:800;font-size:.8rem;background:rgba(43,76,126,.06);cursor:pointer}
+.jz-slot .num{position:absolute;top:4px;right:8px;font-size:.65rem;opacity:.7}
+.jz-slot.filled{border-style:solid;border-color:#22c55e;background:rgba(34,197,94,.12);color:var(--ink);cursor:default;font-weight:700;font-size:.82rem;line-height:1.6}
+.jz-slot.filled::after{content:'';position:absolute;left:-9px;top:50%;transform:translateY(-50%);width:16px;height:16px;border-radius:50%;background:rgba(34,197,94,.25);border:2px solid #22c55e}
+.jz-traylabel{font-size:.7rem;font-weight:700;color:var(--ink3)}
+.jz-tray{display:-webkit-flex;display:flex;-webkit-flex-wrap:wrap;flex-wrap:wrap;gap:.5rem;min-height:60px}
+.jz-piece{position:relative;border:1px solid var(--gbd);background:linear-gradient(135deg,#fff,#ede6d9);border-radius:12px;padding:.8rem .9rem .5rem;cursor:grab;font-family:'Tajawal';font-weight:700;font-size:.8rem;color:var(--ink);touch-action:none;max-width:230px}
+.jz-piece::before{content:'';position:absolute;top:-8px;left:50%;transform:translateX(-50%);width:14px;height:14px;border-radius:50%;background:inherit;border:1px solid var(--gbd)}
+.jz-piece.sel{border-color:var(--gold);box-shadow:0 0 0 3px rgba(166,61,64,.35)}
+.jz-piece.lifting{opacity:.35}
+.jz-ghost{position:fixed;z-index:500;pointer-events:none;opacity:.95;transform:scale(1.06)}
+.jz-reveal{background:rgba(34,197,94,.1);border:1px solid #22c55e;border-radius:12px;padding:.7rem 1rem;font-weight:600;line-height:2;font-size:.9rem}
+.jz-final{text-align:center;padding:1rem 0}.jz-final .big{font-size:2.4rem;font-weight:900;color:var(--gold2)}.jz-final p{font-weight:700;color:var(--ink2);margin:.4rem 0 .8rem;line-height:2}
+.jz-final button{margin:0 .3rem;width:auto;border-radius:12px;padding:.5rem 1.2rem}
+.celebrate{position:fixed;top:0;right:0;bottom:0;left:0;z-index:500;pointer-events:none}
+.celebrate span{position:absolute;font-size:2rem;animation:cpop 1.4s ease forwards}
+@keyframes cpop{0%{transform:translateY(0) scale(.5);opacity:0}30%{opacity:1}100%{transform:translateY(-45vh) scale(1.4);opacity:0}}
+.toast{position:fixed;bottom:84px;left:50%;transform:translateX(-50%);z-index:600;background:rgba(25,23,19,.94);color:#fff;font-weight:800;font-size:.8rem;border-radius:14px;padding:.6rem 1.2rem;white-space:pre-line;text-align:center;max-width:80%}
+body.immersive .rail,body.immersive .fab,body.immersive .edgeMenu,body.immersive .seal,body.immersive .watermark{display:none!important}
+body.immersive .slide{padding:14px 10px 16px 22px}
+body.mode-phone{--ww:clamp(150px,46vh,250px)}
+body.mode-phone .watermark{display:none}
+body.mode-phone .slide{padding:52px 8px 26px 22px;overflow-y:auto;touch-action:pan-y}
+body.mode-phone .fab{width:36px;height:36px;font-size:1rem;top:6px;right:6px}
+body.mode-phone .seal{width:40px;height:40px;bottom:6px;left:20px}
+body.mode-phone .seal .s2{font-size:.4rem}
+body.mode-phone .qinner{gap:.4rem}
+body.mode-phone .layer{padding:.5rem .6rem}
+body.mode-phone .ltag{font-size:.45rem}
+body.mode-phone .qtext{font-size:.85rem}
+body.mode-phone .answer{font-size:.78rem;line-height:1.7}
+body.mode-phone .hint{font-size:.5rem}
+body.mode-phone .wcap{font-size:.5rem}
+body.mode-phone .zoomtxt{font-size:.55rem}
+body.mode-phone .wheelwrap{width:var(--ww);height:var(--ww)}
+body.mode-phone .card{width:calc(var(--ww)*.32);height:calc(var(--ww)*.24);margin:calc(var(--ww)*-.12) calc(var(--ww)*-.16)}
+body.mode-phone .hub{width:calc(var(--ww)*.26);height:calc(var(--ww)*.26)}
+body.mode-phone .hub b{font-size:calc(var(--ww)*.08)}
+body.mode-phone .hubsum{grid-template-columns:1.15fr .85fr;gap:.7rem;height:auto;max-height:100%;align-items:center}
+body.mode-phone .hs-parchment{padding:1.4rem .9rem .9rem}
+body.mode-phone .hs-banner{font-size:.7rem;padding:.3rem .8rem;top:-10px;right:14px}
+body.mode-phone .hs-body{max-height:34vh;overflow-y:auto}
+body.mode-phone .hs-line{font-size:.72rem;line-height:1.7;padding:.35rem .5rem}
+body.mode-phone .hs-photo{min-height:min(200px,34vh)}
+body.mode-phone .hs-halo{width:min(150px,26vh);height:min(150px,26vh)}
+body.mode-phone .hs-img{width:min(130px,24vh);height:min(180px,30vh)}
+body.mode-phone .hs-dates{padding:.15rem .5rem;font-size:.6rem;border-width:2px}
+body.mode-phone .cover,body.mode-phone .sintro,body.mode-phone .end{padding:1rem 1.2rem}
+body.mode-phone .cover h1,body.mode-phone .sintro h1{font-size:1.4rem}
+@media (orientation:portrait){
+ body.mode-phone .hubsum{grid-template-columns:1fr;overflow-y:auto}
+ body.mode-phone .hs-body{max-height:none}
+ body.mode-phone .qinner{grid-template-columns:1fr;height:auto}
+ body.mode-phone .visual{min-height:300px}
+}
+body.mode-present .slide{padding:34px 64px 34px 70px}
+body.mode-present .qinner{grid-template-columns:1.12fr .88fr;gap:2.2rem;width:min(1560px,100%);height:min(86vh,860px)}
+body.mode-present .qtext{font-size:clamp(1.5rem,2.5vw,2.1rem)}
+body.mode-present .answer{font-size:clamp(1.15rem,1.9vw,1.55rem);max-width:100%}
+body.mode-present .wheelwrap{width:min(430px,52vh);height:min(430px,52vh)}
+body.mode-present .card{width:130px;height:98px;margin:-49px -65px}
+body.mode-present .cover h1,body.mode-present .sintro h1{font-size:clamp(2.4rem,5vw,3.6rem)}
+</style>
+</head>
+<body>
+<div class="sun"></div>
+<div class="cloud" style="width:360px;height:110px;top:12%;animation-duration:95s;animation-delay:-20s"></div>
+<div class="cloud" style="width:300px;height:100px;top:36%;animation-duration:120s;animation-delay:-70s"></div>
+<div class="cloud" style="width:420px;height:130px;top:62%;animation-duration:140s;animation-delay:-40s"></div>
+<div class="letters" id="letters"></div>
+<div class="seal" id="seal"><span class="s1">✦ الأستاذ ✦</span><span class="s2">أحمد المرشد</span><span class="s3">❁</span></div>
+<div class="watermark" id="wm">المقالة</div>
+<button class="fab" id="menuFab" title="القائمة">🎛</button>
+<div class="edgeMenu" id="edgeMenu">
+ <button class="em-item" data-act="nav"><span class="ic">🗂</span>خريطة الدرس</button>
+ <button class="em-item" data-act="gloss"><span class="ic">📖</span>المصطلحات</button>
+ <button class="em-item" data-act="jz"><span class="ic">🧩</span>بازل الأجوبة</button>
+ <button class="em-item" data-act="quiz"><span class="ic">📝</span>الاختبار</button>
+ <button class="em-item" data-act="eq"><span class="ic">📝</span>اختبار ختامي</button>
+ <button class="em-item" data-act="meta"><span class="ic">🏆</span>إنجازاتي</button>
+ <button class="em-item" data-act="fs"><span class="ic">⛶</span>ملء الشاشة</button>
+ <button class="em-item" data-act="theme"><span class="ic" id="themeIco">🌙</span><span id="themeName">الثيم الداكن</span></button>
+ <div class="em-sep"></div>
+ <button class="em-item" data-act="auto"><span class="ic">📏</span>قياس تلقائي</button>
+ <button class="em-item" data-act="zin"><span class="ic">➕</span>تكبير (يدوي)</button>
+ <button class="em-item" data-act="zout"><span class="ic">➖</span>تصغير (يدوي)</button>
+ <div class="em-sep"></div>
+ <button class="em-item" data-act="m-phone"><span class="ic">📱</span>تخطيط هاتف</button>
+ <button class="em-item" data-act="m-tablet"><span class="ic">📋</span>تخطيط آيباد</button>
+ <button class="em-item" data-act="m-present"><span class="ic">📽️</span>تخطيط عرض</button>
+</div>
+<div class="rail"><span class="pct" id="pct">٠٪</span><div class="track"><div class="fill" id="fill"></div><div class="orb" id="orb"></div></div><span class="rlabel">تقدّم الطالب</span></div>
+<div class="deck anim" id="deck"></div>
+<div class="navPanel" id="navPanel">
+ <div class="np-head"><h3>🗂 خريطة الدرس</h3><button class="dclose" id="navClose">✕</button></div>
+ <div class="np-prog"><span id="npPct">التقدم: ٠٪</span><span id="npReach"></span></div>
+ <div class="np-list" id="npList"></div>
+</div>
+<div class="drawer" id="drawer"><div class="dhead"><h3 id="dTitle">مصطلحات</h3><button class="dclose press" id="dClose">✕</button></div><div class="dlist" id="dList"></div></div>
+<div class="tip" id="tip"><b id="tipT"></b><p id="tipD"></p></div>
+<div class="rotate-overlay"><div class="rot-icon">📱</div><h2>يرجى تدوير الجهاز أفقيًا</h2><p>هذا العرض مصمَّم للاتجاه الأفقي</p></div>
+<button id="navBtn" hidden></button><button id="glossBtn" hidden></button><button id="jzBtn" hidden></button><button id="quizBtn" hidden></button>
+<script>
+var AR='٠١٢٣٤٥٦٧٨٩';
+function arNum(n){return String(n).split('').map(function(d){return AR[+d];}).join('');}
+function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
+function clampN(v,a,b){return Math.max(a,Math.min(b,v));}
+var PRE='mq';
+function imgKey(s,q,g){return PRE+'-'+s+'-'+q+'-'+g;}
+function imgSrc(s,q,g){var k=imgKey(s,q,g);return (typeof IMAGE_URLS!=='undefined'&&IMAGE_URLS[k])?IMAGE_URLS[k]:'images/'+k+'.jpg';}
+function phSrc(n){var svg='<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300">'
+ +'<rect x="6" y="6" width="388" height="288" fill="none" stroke="rgba(124,43,46,.35)" stroke-width="2" stroke-dasharray="9 7"/>'
+ +'<text x="200" y="140" font-size="20" text-anchor="middle" fill="rgba(74,68,58,.6)" font-family="Tajawal,Arial">ضع صورتك هنا</text>'
+ +'<text x="200" y="178" font-size="26" text-anchor="middle" fill="rgba(166,61,64,.7)" font-family="Tajawal,Arial" font-weight="bold">'+n+'</text>'
+ +'</svg>';
+ return 'data:image/svg+xml;charset=utf-8,'+encodeURIComponent(svg);}
+window.ph=function(el){el.onerror=null;el.src=phSrc(el.getAttribute('data-name'));};
+var POET={name:'علي جواد الطاهر',role:'ناقد ومحقق وكاتب مقالة أدبية',years:'1919–1996',img:(typeof IMAGE_URLS!=='undefined'&&IMAGE_URLS['taher'])||'images/taher.jpg',wm:'علي جواد الطاهر'};
+var POET_SUM=['في عام 1919م وُلد الدكتور علي جواد الطاهر في الحلة، وتلقى فيها تعليمه الابتدائي ثم الثانوي.','درس بعد ذلك اللغة العربية وآدابها في دار المعلمين العالية، متتلمذًا لكبار علماء العربية مثل محمد مهدي البصير ومصطفى جواد وطه الراوي.','يُعد واحدًا من أهم النقاد والمحققين في عصره، فضلا عن أنه كاتب مقالة أدبية من الطراز الأول يزاوج بين الحديث والقديم.','حاز درجة الدكتوراه من جامعة السوربون في فرنسا عام 1954م، وتوفي في بغداد عام 1996م.','من مؤلفاته: (أساتذتي ومقالات أخرى)، و(الباب الضيق)، و(وراء الأفق الأدبي).'];
+var POEM=[];
+var SHAWAHID=[];
+var SECTIONS=[
+{name:'المقالة · مفهومها ونشأتها وأنواعها',icon:'📰',wm:'المقالة',terms:[
+{t:'المقالة',d:'قطعة إنشائية طويلة تكتب نثرًا تعالج موضوعًا معينًا من وجهة نظر الكاتب.'},
+{t:'المقالة الذاتية',d:'تسمى الأدبية، تعتمد الأسلوب الأدبي المشع بالعاطفة.'},
+{t:'المقالة الموضوعية',d:'تسمى العلمية، تعنى بعرض موضوع علمي واضح.'},
+{t:'فن الرسائل',d:'الفن العربي القديم المشابه للمقالة.'}]},
+].concat([]);
+SECTIONS[0].qs=[
+{q:'ما تعريف المقالة؟ وكيف تُكتب؟ وماذا تعالج؟',key:0,a:['المقالة هي إحدى أنواع فن النثر، وهي قطعة إنشائية طويلة تُكتب نثرًا تعالج موضوعًا معينًا من وجهة نظر الكاتب،','وتقسم المقالة على أنواع كثيرة ومتعددة.']},
+{q:'فيمَ نشأت المقالة؟ وبمَ ارتبطت؟',key:0,a:['نشأت المقالة في الآداب الأوروبية الحديثة، وارتبطت ارتباطًا وثيقًا بالصحافة التي ازدهرت في عصر النهضة،','وما واكبها من تطور الأنشطة الفكرية والعلمية والثقافية والسياسية التي أدت إلى تزايد عدد الصحف والمجلات المختلفة الموضوعات.']},
+{q:'من هو منشئ المقالة الحديثة؟',key:0,a:['يُعد الكاتب الفرنسي (مونتيني) (1533-1592)','منشئ المقالة الحديثة.']},
+{q:'متى عرف العرب فن المقالة؟ وما العوامل التي ساعدت في ظهورها؟',key:0,a:['عرفها العرب في نهاية القرن التاسع عشر ومطلع القرن العشرين بعد إنشاء الصحف والمجلات وتزايد النشاط السياسي وظهور الحركات المناهضة للاستعمار،','فضلا عن تزايد أعداد دعاة النهضة وانتشار التعليم في البلدان العربية، سواء بازدياد عدد المدارس أم بالاتصال بالغرب من طريق البعثات.']},
+{q:'ما الفن العربي القديم الذي يشابه فن المقالة؟',key:0,a:['عرفت الآداب العربية قديمًا فنًا مشابهًا للمقالة هو (فن الرسائل)،','وفيه يتناول الكاتب موضوعًا بعينه على نحو موجز.']},
+{q:'تنقسم المقالة على نوعين، ما هما؟',key:0,a:['المقالة على نوعين:','ذاتية وموضوعية.']},
+{q:'ما المقالة الذاتية (الأدبية)؟ وعلامَ تعتمد؟',key:0,a:['المقالة الذاتية وتسمى أيضًا (الأدبية) تعتمد الأسلوب الأدبي','الذي يشع بالعاطفة ويستند إلى الصور الفنية.']},
+{q:'ما المقالة الموضوعية (العلمية)؟ وبم تُعنى؟ وعلامَ تحرص؟',key:0,a:['أما المقالة الموضوعية وتسمى أيضًا (العلمية) فتعنى بعرض موضوع علمي،','وتحرص على التقيد بأسلوب العرض العلمي الواضح وتقديم المقدمات واستخراج النتائج.']},
+{q:'ما الفرق بين المقالة الذاتية (الأدبية) والموضوعية (العلمية)؟',note:'جواب آخر سؤالين',key:0,a:['المقالة الذاتية (الأدبية) تعتمد الأسلوب الأدبي الذي يشع بالعاطفة ويستند إلى الصور الفنية،','أما الموضوعية (العلمية) فتعنى بعرض موضوع علمي وتحرص على أسلوب العرض العلمي الواضح وتقديم المقدمات واستخراج النتائج.']},
+{q:'ما أنواع المقالة؟ تحدث عنها بإيجاز.',note:'جواب س6 و7 و8',key:0,a:['المقالة على نوعين: ذاتية وموضوعية؛ فالذاتية (الأدبية) تعتمد الأسلوب الأدبي الذي يشع بالعاطفة ويستند إلى الصور الفنية،','أما الموضوعية (العلمية) فتعنى بعرض موضوع علمي وتحرص على التقيد بأسلوب العرض العلمي الواضح وتقديم المقدمات واستخراج النتائج.']},
+{q:'ما شروط المقالة الأدبية؟',key:0,a:['يشترط في المقالة الأدبية أن تعبر عن أفكار كاتبها ومشاعره وتجاربه،','والبعد عن التكلف والصنعة.']},
+{q:'ما خصائص المقالة الأدبية؟',key:0,a:['خصائص المقالة الأدبية: الوحدة في الموضوع، ووضوح الفكرة المعروضة، والترتيب المتسلسل المنطقي للأفكار؛ فتكون كل فكرة ممهدة للفكرة التي بعدها ونتيجة للفكرة التي تسبقها،','والابتعاد من تضمين الألفاظ الغريبة غير المفهومة من النص الأدبي.']}
+];
+SECTIONS=SECTIONS.concat([
+{name:'علي جواد الطاهر · حياته',icon:'🖋️',wm:'علي جواد الطاهر',terms:[
+{t:'دار المعلمين العالية',d:'التي درس فيها اللغة العربية وآدابها.'},
+{t:'السوربون',d:'جامعة فرنسية حاز منها الدكتوراه عام 1954.'},
+{t:'المحققون',d:'الذين يدرسون النصوص القديمة ويضبطونها.'}],
+qs:[
+{q:'متى وأين وُلد الدكتور علي جواد الطاهر؟ وأين تلقى تعليمه؟',key:0,a:['في عام 1919م وُلد الدكتور علي جواد الطاهر في الحلة،','وتلقى فيها تعليمه الابتدائي ثم الثانوي.']},
+{q:'ماذا درس بعد الثانوية؟ وعلى يد من تتلمذ؟',key:0,a:['درس بعد ذلك اللغة العربية وآدابها في دار المعلمين العالية،','متتلمذًا لكبار علماء العربية في عصره مثل الدكتور محمد مهدي البصير والدكتور العلامة مصطفى جواد والأستاذ طه الراوي وغيرهم من الأعلام.']},
+{q:'ما منزلة الطاهر الأدبية؟',key:0,a:['يُعد علي جواد الطاهر واحدًا من أهم النقاد والمحققين في عصره، إذ النقد ميدانه الأرحب والأهم من بين الميادين الأدبية،','فضلا عن أنه كاتب مقالة أدبية من الطراز الأول؛ إذ يزاوج في مقالاته وسائر أدبه بين الحديث والقديم على نحو منسجم متآلف يجذب القارئ ويحثه على الاستمرارية في قراءة النص.']},
+{q:'متى ومن أين حاز على شهادة الدكتوراه؟',key:0,a:['في عام 1954م حاز درجة الدكتوراه','من جامعة السوربون في فرنسا.']},
+{q:'متى وأين توفي علي جواد الطاهر؟',key:0,a:['توفي في بغداد','عام 1996م.']},
+{q:'ما مؤلفات علي جواد الطاهر (آثاره)؟',key:0,a:['له مؤلفات في مجالات الأدب الكثيرة ولاسيما المقالة، منها: (أساتذتي ومقالات أخرى)،','و(الباب الضيق)، و(وراء الأفق الأدبي).']}
+]},
+{name:'فرقٌ بين أن تدّعي الجديد وأن تقدر عليه · التعليق النقدي',icon:'⚖️',wm:'فرقٌ بين أن تدّعي الجديد',terms:[
+{t:'مدّعو التجديد',d:'من يركبون موجة التجديد للمجد الشخصي والشهرة.'},
+{t:'التراث',d:'الإرث الأدبي والفكري للأمة.'},
+{t:'سنة الحياة',d:'ما هو جديد اليوم سيصبح قديمًا غدًا.'}],
+qs:[
+{q:'ما عنوان مقالة الطاهر؟ وهل كان المحتوى متناسبًا مع هذا العنوان؟',key:0,a:['ابتداءً من عنوان المقالة (فرقٌ بين أن تدّعي الجديد... وأن تقدر عليه) يظهر موضوعها الذي أراد الدكتور علي جواد الطاهر عرضه ومناقشته،','فمسألة الصراع بين القديم والجديد مسألة قديمة متجددة.']},
+{q:'ما الفكرة الرئيسة لمقالة الطاهر؟',key:0,a:['الفكرة الرئيسة لهذه المقالة هي بيان زيف بعض مدّعي التجديد ممن يركبون هذه الموجة بغية تحقيق المجد الشخصي والشهرة على حساب الحقيقة،','وهم إنما يلجؤون أولًا إلى الهزء بالقديم والدعوة إلى تركه وتشويهه.']},
+{q:'ما الدعوات إلى التجديد الحقيقي التي حاول الطاهر أن يبينها في مقالته؟',key:0,a:['يبين الطاهر أن الدعوة إلى الجديد الحقيقي النافع للناس لن تكون بطعن القديم الذي هو أصله وأسه الذي يستند إليه، فهما يتضافران معًا،','فليس كل جديد وقديم متعارضين، وليس كل قديم سيئًا لابد من نبذه وقطع دابره، فما هو جديد اليوم سيصبح قديمًا غدًا، وهذه هي سنة الحياة.']},
+{q:'لِمَ عرض الطاهر فكرته في هذه المقالة؟',key:0,a:['عرض الطاهر هذه الفكرة لفضح مدّعي التجديد ممن ستكون عواقبهم التأريخية وخيمة إن ظهر الجديد الحقيقي،','وهو بذلك يدعو إلى التمهّل في قبول ما يبدو جديدًا؛ ولاسيما إن طعن في التراث.']},
+{q:'ما رأيك بمقالة الطاهر من حيث تحقق خصائص المقالة؟',key:0,a:['خصائص المقال الأدبي هنا متحققة جميعها: من وحدة الموضوع، ووضوح الفكرة، والترتيب المتسلسل المنطقي للأفكار المعروضة،','وقد ابتعد من تضمين الألفاظ الغريبة غير المفهومة فجاءت المقالة سهلة على الأفهام واضحة البيان.']}
+]}]);
+var QUIZ={0:[{q:'المقالة إحدى أنواع:',o:['فن النثر','الشعر','المسرح','الخطابة'],a:0},{q:'من منشئ المقالة الحديثة:',o:['مونتيني','الطهطاوي','زينب فواز','هيكل'],a:0},{q:'الفن العربي القديم المشابه للمقالة:',o:['فن الرسائل','المقامات','الخطبة','الموشحات'],a:0},{q:'المقالة التي تعتمد الأسلوب الأدبي المشع بالعاطفة:',o:['الذاتية','الموضوعية','العلمية','البحثية'],a:0}],
+1:[{q:'متى وأين وُلد علي جواد الطاهر؟',o:['1919 في الحلة','1942 في بغداد','1930 في البصرة','1926 في النجف'],a:0},{q:'أين درس اللغة العربية وآدابها؟',o:['دار المعلمين العالية','جامعة بغداد','السوربون','الجامعة اللبنانية'],a:0},{q:'متى حاز الدكتوراه من السوربون؟',o:['1954','1948','1960','1973'],a:0},{q:'من مؤلفاته:',o:['الباب الضيق','الثابت والمتحوّل','النخلة والجيران','أوراق الزيتون'],a:0}],
+2:[{q:'ما الفكرة الرئيسة لمقالة الطاهر؟',o:['بيان زيف مدّعي التجديد','مدح القديم مطلقًا','رفض الجديد مطلقًا','وصف الصراع السياسي'],a:0},{q:'الدعوة إلى الجديد الحقيقي تكون:',o:['لا بطعن القديم بل بالتضافر معه','بطعن القديم وتركه','بالتقليد الأعمى','برفض التراث كليًا'],a:0},{q:'خصائص المقالة الأدبية في مقالة الطاهر:',o:['متحققة جميعها','غير متحققة','متحققة جزئيًا','منعدمة'],a:0},{q:'لِمَ عرض الطاهر فكرته؟',o:['لفضح مدّعي التجديد والدعوة للتمهل','للسخرية فقط','للمدح','للتسلية'],a:0}]};
+/* ===== Meta: نجوم، أختام، رتب ===== */
+var META={stars:{},seals:{},best:{}};
+try{var _m=JSON.parse(localStorage.getItem('maqala_meta')||'null');if(_m)META=_m;}catch(e){}
+META.stars=META.stars||{};META.seals=META.seals||{};META.best=META.best||{};
+function saveMeta(){try{localStorage.setItem('maqala_meta',JSON.stringify(META));}catch(e){}}
+function totalStars(){var t=0;for(var k in META.stars)t+=META.stars[k];return t;}
+function rankInfo(){var max=Math.max(1,SECTIONS.length*6);var r=totalStars()/max;
+ if(r<.25)return{n:'مبتدئ',i:'🌱'};if(r<.45)return{n:'قارئ',i:'📖'};if(r<.65)return{n:'أديب',i:'🖋️'};if(r<.85)return{n:'ناقد',i:'⚖️'};return{n:'علّامة',i:'🏆'};}
+/* ===== الثيم ===== */
+var THEME_KEY='maqalaTheme';
+function applyTheme(t){document.documentElement.setAttribute('data-theme',t);syncThemeItem();}
+function syncThemeItem(){var i=document.getElementById('themeIco'),n=document.getElementById('themeName');
+ if(i)i.textContent=(theme==='dark'?'☀️':'');
+ if(n)n.textContent=(theme==='dark'?'الثيم الفاتح':'الثيم الداكن');}
+var theme='light';try{theme=localStorage.getItem(THEME_KEY)||'light';}catch(e){}
+applyTheme(theme);
+function toggleTheme(){theme=(theme==='dark'?'light':'dark');try{localStorage.setItem(THEME_KEY,theme);}catch(e){}applyTheme(theme);}
+/* ===== القياس ===== */
+var scaleMode='auto',kScale=1;
+function applyScale(){if(scaleMode==='auto'){kScale=clampN(Math.min(innerWidth/1280,innerHeight/800),0.72,1.35);}
+ document.documentElement.style.setProperty('--k',kScale.toFixed(3));}
+/* ===== بناء الشرائح ===== */
+var deck=document.getElementById('deck');
+var corners='<span class="corner tl">✦</span><span class="corner tr">✦</span><span class="corner bl">✦</span><span class="corner br">✦</span>';
+var gq=0,slideMeta=[],gateSlides=[];
+function addSlide(html,meta){var s=document.createElement('section');s.className='slide';s.innerHTML=html;deck.appendChild(s);meta.el=s;slideMeta.push(meta);return s;}
+var totalQ=SECTIONS.reduce(function(a,s){return a+s.qs.length;},0);
+var totalSeg=SECTIONS.reduce(function(a,s){return a+s.qs.reduce(function(b,q){return b+q.a.length;},0);},0);
+var poetIdx=[];SECTIONS.forEach(function(s,i){if(s.theme==='poet')poetIdx.push(i);});
+addSlide('<div class="cover glass orn-c">'+corners+'<span class="kick">📰 بطاقات مذاكرة تُقلَّب باللمس</span><h1>المقالة · علي جواد الطاهر</h1><div class="orn">✦ ───── ❖ ───── ✦</div><p>اسحب للتنقل، والمس العبارات الذهبية لتدور العجلة وتنبثق صورتها. افتح 🎛 لكل الأدوات وخريطة الدرس وإنجازاتك.</p><div class="stats"><span><b>'+arNum(SECTIONS.length)+'</b> أبواب</span><span><b>'+arNum(totalQ)+'</b> سؤالًا</span><span><b>'+arNum(totalSeg)+'</b> عبارة وصورة</span><span><b>أ. أحمد المرشد</b></span></div><div class="swipe-hint"><span class="sw-arrow">›</span> اسحب للبدء <span class="sw-arrow" style="animation-delay:.8s">‹</span></div></div>',{type:'cover',wm:'المقالة',title:'الغلاف'});
+function poetSummaryHTML(){return '<div class="hubsum"><div class="hs-parchment"><div class="hs-banner">علي جواد الطاهر :</div><div class="hs-body">'+POET_SUM.map(function(l,i){return '<p class="hs-line" data-i="'+i+'">'+l+'</p>';}).join('')+'</div></div><div class="hs-photo"><div class="hs-halo"></div><div class="hs-img"><img src="'+POET.img+'" data-name="'+POET.img+'" onerror="ph(this)"></div><div class="hs-dates"><b>'+POET.years+'</b></div></div></div>';}
+var poetIdx=[];SECTIONS.forEach(function(s,i){if(s.theme==='poet')poetIdx.push(i);});
+addSlide('<div class="cover glass orn-c">'+corners+'<span class="kick">📰 بطاقات مذاكرة تُقلَّب باللمس</span><h1>المقالة · علي جواد الطاهر</h1><div class="orn">✦ ───── ❖ ───── ✦</div><p>اسحب للتنقل، والمس العبارات الذهبية لتدور العجلة وتنبثق صورتها. افتح 🎛 لكل الأدوات وخريطة الدرس وإنجازاتك.</p><div class="stats"><span><b>'+arNum(SECTIONS.length)+'</b> أبواب</span><span><b>'+arNum(totalQ)+'</b> سؤالًا</span><span><b>'+arNum(totalSeg)+'</b> عبارة وصورة</span><span><b>أ. أحمد المرشد</b></span></div><div class="swipe-hint"><span class="sw-arrow">›</span> اسحب للبدء <span class="sw-arrow" style="animation-delay:.8s">‹</span></div></div>',{type:'cover',wm:'المقالة',title:'الغلاف'});
+function poetSummaryHTML(){return '<div class="hubsum"><div class="hs-parchment"><div class="hs-banner">علي جواد الطاهر :</div><div class="hs-body">'+POET_SUM.map(function(l,i){return '<p class="hs-line" data-i="'+i+'">'+l+'</p>';}).join('')+'</div></div><div class="hs-photo"><div class="hs-halo"></div><div class="hs-img"><img src="'+POET.img+'" data-name="'+POET.img+'" onerror="ph(this)"></div><div class="hs-dates"><b>'+POET.years+'</b></div></div></div>';}
+poetIdx=[1]; /* ملخص السيرة قبل باب حياته */
+SECTIONS.forEach(function(sec,si){
+ if(si===poetIdx[0])addSlide(poetSummaryHTML(),{type:'poetsum',wm:sec.wm,title:'ملخص حياته',sec:si}).classList.add('poet');
+ var intro=addSlide('<div class="sintro glass orn-c">'+corners+'<span class="sicon">'+sec.icon+'</span><span class="kick">الباب '+arNum(si+1)+'</span><h1>'+sec.name+'</h1><div class="orn">✦ ─────  ───── ✦</div><p>'+arNum(sec.qs.length)+' أسئلة · '+arNum(sec.qs.reduce(function(a,q){return a+q.a.length;},0))+' عبارة وصورة</p><div class="swipe-hint"><span class="sw-arrow">›</span> اسحب للمتابعة <span class="sw-arrow" style="animation-delay:.8s">‹</span></div></div>',{type:'intro',wm:sec.wm,sec:si,title:sec.name,isSecDot:true});
+ if(sec.theme)intro.classList.add('poet');
+ sec.qs.forEach(function(q,qi){
+  var s=addSlide('<div class="qinner"><div class="layers"><div class="layer glass orn-q">'+corners+'<span class="ltag">❓ السؤال '+arNum(qi+1)+' من '+arNum(sec.qs.length)+' · '+sec.name+'</span><div class="qtext"></div><button class="varbtn press" style="display:none"></button><div class="varbox"></div></div><div class="divsep">✦ الجواب </div><div class="layer glass orn-a">'+corners+'<div class="hint"><span class="legend"><span class="dot-g"></span>عبارة لها صورة</span><span class="legend"><span class="dot-t"></span>مصطلح</span></div><p class="answer"></p></div></div><div class="visual"><div class="wheelstage"><div class="pointer">▼</div><div class="wheelwrap"><div class="ring"></div><div class="ring2"></div><div class="wheel"></div><div class="hub"><b>'+arNum(qi+1)+'</b><span>س</span></div></div><div class="wcap">المس عبارة لتدور العجلة</div></div><div class="zoomframe"><img class="zoomimg"><div class="zoomclose">✕ إغلاق</div><div class="zoomcap"><span class="zoomtxt"></span><span class="zoombadge"></span></div></div></div></div>',{type:'q',wm:sec.wm,sec:si,gq:gq,title:'سؤال '+arNum(qi+1)});
+  if(sec.theme)s.classList.add('poet');
+  s.setAttribute('data-gq',gq);s.setAttribute('data-sec',si);gq++;});
+ var gate=addSlide('<div class="glass gate">'+corners+'<span class="kick">بوابة الباب '+arNum(si+1)+'</span><h2 style="font-weight:900">🧩 لغز العبور</h2><div class="pz-area"></div></div>',{type:'gate',wm:sec.wm,sec:si,title:'لغز '+sec.name});
+ if(sec.theme)gate.classList.add('poet');
+ gateSlides[si]=gate;});
+addSlide('<div class="end glass orn-c">'+corners+'<span class="kick">نهاية الجولة</span><h1>أحسنت!</h1><div class="big-pct" id="endPct">٠٪</div><div class="ebar"><i id="endFill"></i></div><p id="endMsg" style="color:var(--ink2)"></p><button class="ebtn press" id="replay">العودة للبداية</button></div>',{type:'end',wm:'المقالة',title:'الختام'});
+/* ===== ربط أسئلة العجلة ===== */
+var slides=Array.prototype.slice.call(deck.children);var N=slides.length;var QS=[];
+var qSlides=slides.filter(function(x){return x.hasAttribute('data-gq');});
+qSlides.forEach(function(s,idx){
+ var si=+s.getAttribute('data-sec'),sec=SECTIONS[si];if(!sec)return;
+ var qi=qSlides.slice(0,idx).filter(function(x){return +x.getAttribute('data-sec')===si;}).length;
+ var q=sec.qs[qi];if(!q)return;
+ var g=+s.getAttribute('data-gq');
+ var o={slide:s,sec:si,qi:qi,selP:-1,seen:{},segs:[],wheel:s.querySelector('.wheel'),pointer:s.querySelector('.pointer'),cap:s.querySelector('.wcap'),zoomframe:s.querySelector('.zoomframe'),zoomimg:s.querySelector('.zoomimg'),zoomtxt:s.querySelector('.zoomtxt'),zoombadge:s.querySelector('.zoombadge')};
+ QS[g]=o;
+ s.querySelector('.qtext').innerHTML=esc(q.q)+(q.note?'<div style="font-size:.66rem;font-weight:700;color:var(--gold2);margin-top:.3rem">✦ '+esc(q.note)+'</div>':'');
+ var vb=s.querySelector('.varbtn'),vx=s.querySelector('.varbox');
+ if(q.v&&q.v.length){vb.style.display='inline-block';vb.textContent='✦ أنماط أخرى ('+arNum(q.v.length)+')';
+  vx.innerHTML=q.v.map(function(x){return '<div class="var"><i>❐</i>'+esc(x)+'</div>';}).join('');
+  vb.onclick=function(){vx.classList.toggle('open');};}
+ var ans=s.querySelector('.answer'),n=q.a.length,step=360/n;
+ q.a.forEach(function(t,i){
+  var sg=document.createElement('span');sg.className='seg press'+(q.key===i?' pull':'');sg.innerHTML=highlight(t,sec.terms);
+  sg.onclick=function(){selectSeg(g,i);};
+  Array.prototype.forEach.call(sg.querySelectorAll('.term'),function(tm){tm.onclick=function(e){e.stopPropagation();openTip(+tm.getAttribute('data-ti'),si,tm);};});
+  ans.appendChild(sg);ans.appendChild(document.createTextNode(' '));o.segs.push(sg);
+  var c=document.createElement('div');c.className='card';c.style.setProperty('--a',(i*step)+'deg');
+  var nm=imgSrc(si+1,qi+1,i+1);
+  c.innerHTML='<div class="card-in"><img draggable="false" src="'+nm+'" data-name="'+imgKey(si+1,qi+1,i+1)+'" onerror="ph(this)"><span class="cn">'+arNum(i+1)+'</span></div>';
+  c.querySelector('.card-in').onclick=function(){selectSeg(g,i);};
+  o.wheel.appendChild(c);var pre=new Image();pre.src=nm;});
+ o.step=step;o.zoomframe.onclick=function(){o.zoomframe.classList.remove('show');};
+});
+function highlight(text,terms){var rest=text,out='';var list=terms.slice().sort(function(a,b){return b.t.length-a.t.length;});
+ while(rest.length){var best=null;
+  for(var k=0;k<list.length;k++){var ix=rest.indexOf(list[k].t);if(ix>-1&&(!best||ix<best.ix))best={ix:ix,tm:list[k],idx:terms.indexOf(list[k])};}
+  if(!best){out+=esc(rest);break;}
+  out+=esc(rest.slice(0,best.ix))+'<span class="term" data-ti="'+best.idx+'">'+esc(best.tm.t)+'</span>';
+  rest=rest.slice(best.ix+best.tm.t.length);}
+ return out;}
+deck.addEventListener('click',function(e){var l=e.target.closest('.hs-line');if(l){l.classList.toggle('on');return;}var c=e.target.closest('.sh-card');if(c)c.classList.toggle('open');});
+/* ===== بوابات P2+P3: ٨ آليات + مفاتيح + دفتر تنوع + بطاقات تعديل (مصححة وفق الملف الرسمي) ===== */
+var GATES=[
+ {prefer:['match','tf','sjig'],
+  match:{pairs:[['المقالة الذاتية','تعتمد الأسلوب الأدبي المشع بالعاطفة'],['المقالة الموضوعية','تعنى بعرض موضوع علمي واضح'],['مونتيني','منشئ المقالة الحديثة'],['فن الرسائل','الفن العربي القديم المشابه للمقالة']]},
+  tf:[{s:'المقالة على نوعين: ذاتية وموضوعية.',tf:true},{s:'نشأت المقالة في الآداب الأوروبية الحديثة وارتبطت بالصحافة.',tf:true},{s:'عرف العرب المقالة قبل القرن التاسع عشر بقرون.',tf:false},{s:'المقالة الموضوعية تعتمد الأسلوب الأدبي المشع بالعاطفة.',tf:false}],
+  sjig:{parts:['تعريف المقالة قطعة إنشائية نثرية تعالج موضوعًا من وجهة نظر الكاتب','نشأتها في الآداب الأوروبية الحديثة وارتباطها بالصحافة','مونتيني (1533-1592) منشئ المقالة الحديثة','عرفها العرب نهاية القرن التاسع عشر ومطلع العشرين']}},
+ {prefer:['timeline','match','memory'],
+  timeline:[{y:'1919',e:'ولادته في الحلة وتلقيه تعليمه فيها'},{y:'دار المعلمين',e:'دراسة اللغة العربية وآدابها'},{y:'1954',e:'دكتوراه من السوربون في فرنسا'},{y:'1996',e:'وفاته في بغداد'}],
+  match:{pairs:[['علي جواد الطاهر','من أهم النقاد والمحققين'],['دار المعلمين العالية','درس فيها اللغة العربية وآدابها'],['السوربون','حاز منها الدكتوراه 1954'],['أساتذتي ومقالات أخرى','من مؤلفاته']]},
+  memory:{pairs:[['محمد مهدي البصير','من أساتذته'],['مصطفى جواد','من أساتذته'],['طه الراوي','من أساتذته'],['الباب الضيق','من مؤلفاته']]}},
+ {prefer:['fill','court','scale','tf'],
+  fill:[{s:'يظهر موضوع المقالة ابتداءً من ___.',a:'عنوانها',o:['عنوانها','خاتمتها','حشوها','هامشها']},
+        {s:'الفكرة الرئيسة بيان زيف بعض مدّعي ___.',a:'التجديد',o:['التجديد','التقليد','التحقيق','التعليم']},
+        {s:'الدعوة إلى الجديد الحقيقي لن تكون بطعن ___.',a:'القديم',o:['القديم','الجديد','الواقع','التراث وحده']},
+        {s:'خصائص المقالة الأدبية في مقالة الطاهر متحققة ___.',a:'جميعها',o:['جميعها','جزئيًا','لا شيء منها','نصفها']}],
+  court:{para:'الفكرة الرئيسة للمقالة مدح مدّعي التجديد، والدعوة إلى الجديد الحقيقي تكون بطعن القديم، وخصائص المقالة الأدبية غير متحققة فيها.',
+   errors:[{wrong:'مدح مدّعي التجديد',fix:'بيان زيف مدّعي التجديد',o:['بيان زيف مدّعي التجديد','مدح مدّعي التجديد','وصف المدّعين','تعداد المدّعين']},
+           {wrong:'بطعن القديم',fix:'لن تكون بطعن القديم بل يتضافران معًا',o:['لن تكون بطعن القديم بل يتضافران معًا','بطعن القديم','بترك القديم','بقطع دابر القديم']},
+           {wrong:'غير متحققة',fix:'متحققة جميعها',o:['متحققة جميعها','غير متحققة','متحققة جزئيًا','منعدمة']}]},
+  scale:{sides:['مدّعو التجديد','التجديد الحقيقي'],items:[{s:'الهزء بالقديم والدعوة إلى تركه',side:0},{s:'ركوب الموجة للمجد الشخصي',side:0},{s:'التضافر مع القديم لا طعنه',side:1},{s:'جديد نافع للناس يستند إلى أصله',side:1}]}}
+];
+var solved=SECTIONS.map(function(){return false;});
+try{JSON.parse(localStorage.getItem('maqalaPuzzles')||'[]').forEach(function(i){solved[i]=true;});}catch(e){}
+function shuffle(a){for(var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=a[i];a[i]=a[j];a[j]=t;}return a;}
+function toast(m){var t=document.createElement('div');t.className='toast';t.textContent=m;document.body.appendChild(t);setTimeout(function(){t.remove();},3200);}
+function celebrate(){var c=document.createElement('div');c.className='celebrate';var em=['🎉','✨','🏆','⭐'];for(var i=0;i<14;i++){var s=document.createElement('span');s.textContent=em[i%em.length];s.style.left=(5+Math.random()*90)+'%';s.style.top=(60+Math.random()*30)+'%';s.style.animationDelay=(Math.random()*.4)+'s';c.appendChild(s);}document.body.appendChild(c);setTimeout(function(){c.remove();},1600);}
+function pickMech(si){var G=GATES[si]||GATES[0];var last=null;try{last=localStorage.getItem('maqala_lastmech');}catch(e){}
+ var m=G.prefer[0];if(m===last&&G.prefer[1])m=G.prefer[1];
+ if(m===last&&G.prefer[2])m=G.prefer[2];
+ try{localStorage.setItem('maqala_lastmech',m);}catch(e){}
+ return m;}
+/* ===== محركات الآليات الثمانية ===== */
+function matchMech(box,pairs,win,G){
+ var L=shuffle(pairs.map(function(p){return p[0];})),Rr=shuffle(pairs.map(function(p){return p[1];}));
+ var selBtn=null,done=0;
+ box.innerHTML='<div class="kkeys">'+pairs.map(function(){return '<span class="kkey">🔒</span>';}).join('')+'</div>'
+ +'<div class="pz-cols"><div class="pz-col">'+L.map(function(t){return '<button class="pz-chip mL" data-v="'+esc(t)+'">'+esc(t)+'</button>';}).join('')+'</div>'
+ +'<div class="pz-col">'+Rr.map(function(t){return '<button class="pz-chip mR" data-v="'+esc(t)+'">'+esc(t)+'</button>';}).join('')+'</div></div>';
+ var keys=box.querySelectorAll('.kkey');
+ Array.prototype.forEach.call(box.querySelectorAll('.mL'),function(b){b.onclick=function(){
+  Array.prototype.forEach.call(box.querySelectorAll('.mL'),function(x){x.classList.remove('sel');});
+  b.classList.add('sel');selBtn=b;};});
+ Array.prototype.forEach.call(box.querySelectorAll('.mR'),function(b){b.onclick=function(){
+  if(!selBtn)return;var lv=selBtn.getAttribute('data-v'),rv=b.getAttribute('data-v');
+  var hit=pairs.some(function(p){return p[0]===lv&&p[1]===rv;});
+  if(hit){selBtn.classList.add('ok');selBtn.disabled=true;b.classList.add('ok');b.disabled=true;
+   keys[done].textContent='🔑';keys[done].classList.add('lit');done++;selBtn=null;
+   if(done===pairs.length)win();}
+  else{G.mist++;b.classList.add('shake');selBtn.classList.add('shake');setTimeout(function(){b.classList.remove('shake');selBtn.classList.remove('shake');},400);}
+ };});
+}
+function fillMech(box,items,win,G){
+ var done=0;
+ box.innerHTML='<div class="kkeys">'+items.map(function(){return '<span class="kkey">🔒</span>';}).join('')+'</div>'
+ +items.map(function(it,i){return '<div class="frow"><span class="fsent">'+esc(it.s).replace('___','<b class="blank">؟؟؟</b>')+'</span><span class="fopts">'+shuffle(it.o.slice()).map(function(o){return '<button class="pz-chip fopt" data-i="'+i+'" data-v="'+esc(o)+'">'+esc(o)+'</button>';}).join('')+'</span></div>';}).join('');
+ var keys=box.querySelectorAll('.kkey');
+ Array.prototype.forEach.call(box.querySelectorAll('.fopt'),function(b){b.onclick=function(){
+  var i=+b.getAttribute('data-i'),v=b.getAttribute('data-v');
+  if(b.classList.contains('used'))return;
+  if(v===items[i].a){b.classList.add('ok');b.classList.add('used');
+   var row=box.querySelectorAll('.frow')[i];
+   row.querySelector('.blank').textContent=items[i].a;row.querySelector('.blank').classList.add('filled');
+   keys[done].textContent='🔑';keys[done].classList.add('lit');done++;
+   if(done===items.length)win();}
+  else{G.mist++;b.classList.add('shake');setTimeout(function(){b.classList.remove('shake');},400);}
+ };});
+}
+function tfMech(box,items,win,G){
+ var done=0;
+ box.innerHTML='<div class="kkeys">'+items.map(function(){return '<span class="kkey">🔒</span>';}).join('')+'</div>'
+ +items.map(function(it,i){return '<div class="tfrow" data-i="'+i+'"><span class="st">'+esc(it.s)+'</span><button class="tfbtn" data-v="1">✔ صح</button><button class="tfbtn" data-v="0">✘ خطأ</button></div>';}).join('');
+ var keys=box.querySelectorAll('.kkey');
+ Array.prototype.forEach.call(box.querySelectorAll('.tfrow'),function(row){
+  var i=+row.getAttribute('data-i');var it=items[i];var locked=false;
+  Array.prototype.forEach.call(row.querySelectorAll('.tfbtn'),function(b){b.onclick=function(){
+   if(locked)return;locked=true;
+   var val=b.getAttribute('data-v')==='1';
+   if(val===it.tf){b.classList.add('ok');}
+   else{b.classList.add('no');G.mist++;row.classList.add('rev');
+    row.querySelectorAll('.tfbtn')[it.tf?0:1].classList.add('ok');}
+   Array.prototype.forEach.call(row.querySelectorAll('.tfbtn'),function(x){x.disabled=true;});
+   keys[done].textContent='🔑';keys[done].classList.add('lit');done++;
+   if(done===items.length)win();
+  };});
+ });
+}
+function timelineMech(box,events,win,G){
+ var order=events.slice();var cards=shuffle(events.slice());var done=0;var selBtn=null;var drag=null;
+ box.innerHTML='<div class="kkeys">'+events.map(function(){return '<span class="kkey">🔒</span>';}).join('')+'</div>'
+ +'<div class="tlaxis">'+order.map(function(ev,i){return '<div class="tlslot" data-i="'+i+'"><span class="yr">'+ev.y+'</span><span class="ev">؟</span></div>';}).join('')+'</div>'
+ +'<div class="tltray">'+cards.map(function(ev){return '<button class="tlcard" data-e="'+esc(ev.e)+'">'+esc(ev.e)+'</button>';}).join('')+'</div>';
+ var keys=box.querySelectorAll('.kkeys .kkey');
+ function attempt(cb,slotIdx){
+  var slot=box.querySelectorAll('.tlslot')[slotIdx];
+  if(!slot||slot.classList.contains('filled'))return;
+  var evText=cb.getAttribute('data-e');
+  if(order[slotIdx].e===evText){
+   slot.classList.add('filled');slot.querySelector('.ev').textContent=evText;
+   cb.remove();keys[done].textContent='🔑';keys[done].classList.add('lit');done++;
+   if(done===order.length)win();
+  }else{G.mist++;slot.classList.add('shake');cb.classList.add('shake');
+   setTimeout(function(){slot.classList.remove('shake');cb.classList.remove('shake');},400);}
+ }
+ Array.prototype.forEach.call(box.querySelectorAll('.tlslot'),function(sl){sl.onclick=function(){
+  if(selBtn){attempt(selBtn,+sl.getAttribute('data-i'));selBtn.classList.remove('sel');selBtn=null;}};});
+ Array.prototype.forEach.call(box.querySelectorAll('.tlcard'),function(cb){
+  cb.addEventListener('pointerdown',function(e){e.preventDefault();
+   var r=cb.getBoundingClientRect();
+   var g=cb.cloneNode(true);g.className='tlcard drag';g.style.left=r.left+'px';g.style.top=r.top+'px';g.style.width=r.width+'px';document.body.appendChild(g);
+   cb.style.opacity='.35';
+   drag={cb:cb,g:g,sx:e.clientX,sy:e.clientY,ox:r.left,oy:r.top,moved:false};
+   function mv(ev){if(!drag)return;var dx=ev.clientX-drag.sx,dy=ev.clientY-drag.sy;if(Math.hypot(dx,dy)>8)drag.moved=true;g.style.left=(drag.ox+dx)+'px';g.style.top=(drag.oy+dy)+'px';}
+   function up(ev){removeEventListener('pointermove',mv);removeEventListener('pointerup',up);if(!drag)return;var moved=drag.moved;var gg=drag.g;var cc=drag.cb;drag=null;gg.remove();cc.style.opacity='';
+    if(!moved){if(selBtn===cc){selBtn=null;cc.classList.remove('sel');}else{if(selBtn)selBtn.classList.remove('sel');selBtn=cc;cc.classList.add('sel');}return;}
+    var el=document.elementFromPoint(ev.clientX,ev.clientY);var sl=el&&el.closest?el.closest('.tlslot'):null;
+    if(sl)attempt(cc,+sl.getAttribute('data-i'));}
+   addEventListener('pointermove',mv);addEventListener('pointerup',up);});
+ });
+}
+function memoryMech(box,mem,win,G){
+ var pairs=mem.pairs;var cards=[];
+ pairs.forEach(function(p,i){cards.push({t:p[0],pid:i});cards.push({t:p[1],pid:i});});
+ cards=shuffle(cards);
+ var first=null,lock=false,done=0;
+ box.innerHTML='<div class="kkeys">'+pairs.map(function(){return '<span class="kkey">🔒</span>';}).join('')+'</div>'
+ +'<div class="memgrid">'+cards.map(function(c,i){return '<button class="memcard" data-i="'+i+'"><span class="bk">؟</span><span class="fc">'+esc(c.t)+'</span></button>';}).join('')+'</div>';
+ var keys=box.querySelectorAll('.kkey');
+ Array.prototype.forEach.call(box.querySelectorAll('.memcard'),function(el){el.onclick=function(){
+  if(lock||el.classList.contains('ok')||el===first)return;
+  el.classList.add('flip');
+  if(!first){first=el;return;}
+  var a=cards[+first.getAttribute('data-i')],b=cards[+el.getAttribute('data-i')];
+  if(a.pid===b.pid&&a.t!==b.t){first.classList.add('ok');el.classList.add('ok');first=null;
+   keys[done].textContent='🔑';keys[done].classList.add('lit');done++;
+   if(done===pairs.length)win();}
+  else{lock=true;G.mist++;var f=first;first=null;
+   setTimeout(function(){f.classList.remove('flip');el.classList.remove('flip');lock=false;},700);}
+ };});
+}
+function sjigMech(box,sj,win,G){
+ var order=sj.parts.slice();var pieces=shuffle(sj.parts.slice());var done=0;var selBtn=null;var drag=null;
+ box.innerHTML='<div class="kkeys">'+order.map(function(){return '<span class="kkey">🔒</span>';}).join('')+'</div>'
+ +'<div class="sjcol">'+order.map(function(_,i){return '<div class="sjslot" data-i="'+i+'"><span class="no">'+arNum(i+1)+'</span><span class="tx">؟</span></div>';}).join('')+'</div>'
+ +'<div class="sjtray">'+pieces.map(function(p){return '<button class="sjpiece" data-t="'+esc(p)+'">'+esc(p)+'</button>';}).join('')+'</div>';
+ var keys=box.querySelectorAll('.kkey');
+ function attempt(cb,idx){
+  var slot=box.querySelectorAll('.sjslot')[idx];
+  if(!slot||slot.classList.contains('filled'))return;
+  if(order[idx]===cb.getAttribute('data-t')){
+   slot.classList.add('filled');slot.querySelector('.tx').textContent=cb.getAttribute('data-t');
+   cb.remove();keys[done].textContent='🔑';keys[done].classList.add('lit');done++;
+   if(done===order.length)win();
+  }else{G.mist++;slot.classList.add('shake');cb.classList.add('shake');
+   setTimeout(function(){slot.classList.remove('shake');cb.classList.remove('shake');},400);}
+ }
+ Array.prototype.forEach.call(box.querySelectorAll('.sjslot'),function(sl){sl.onclick=function(){
+  if(selBtn){attempt(selBtn,+sl.getAttribute('data-i'));selBtn.classList.remove('sel');selBtn=null;}};});
+ Array.prototype.forEach.call(box.querySelectorAll('.sjpiece'),function(cb){
+  cb.addEventListener('pointerdown',function(e){e.preventDefault();
+   var r=cb.getBoundingClientRect();
+   var g=cb.cloneNode(true);g.className='sjpiece drag';g.style.left=r.left+'px';g.style.top=r.top+'px';g.style.width=r.width+'px';document.body.appendChild(g);
+   cb.style.opacity='.35';
+   drag={cb:cb,g:g,sx:e.clientX,sy:e.clientY,ox:r.left,oy:r.top,moved:false};
+   function mv(ev){if(!drag)return;var dx=ev.clientX-drag.sx,dy=ev.clientY-drag.sy;if(Math.hypot(dx,dy)>8)drag.moved=true;g.style.left=(drag.ox+dx)+'px';g.style.top=(drag.oy+dy)+'px';}
+   function up(ev){removeEventListener('pointermove',mv);removeEventListener('pointerup',up);if(!drag)return;var moved=drag.moved;var gg=drag.g;var cc=drag.cb;drag=null;gg.remove();cc.style.opacity='';
+    if(!moved){if(selBtn===cc){selBtn=null;cc.classList.remove('sel');}else{if(selBtn)selBtn.classList.remove('sel');selBtn=cc;cc.classList.add('sel');}return;}
+    var el=document.elementFromPoint(ev.clientX,ev.clientY);var sl=el&&el.closest?el.closest('.sjslot'):null;
+    if(sl)attempt(cc,+sl.getAttribute('data-i'));}
+   addEventListener('pointermove',mv);addEventListener('pointerup',up);});
+ });
+}
+function courtMech(box,court,win,G){
+ var done=0;
+ var html=court.para;
+ court.errors.forEach(function(er,i){html=html.split(er.wrong).join('<span class="suspect" data-i="'+i+'">'+er.wrong+'</span>');});
+ box.innerHTML='<div class="kkeys">'+court.errors.map(function(){return '<span class="kkey">🔒</span>';}).join('')+'</div>'
+ +'<div class="courtpara">'+html+'</div>'
+ +'<div class="courtopts" style="display:none"></div>';
+ var keys=box.querySelectorAll('.kkey');
+ var optsBox=box.querySelector('.courtopts');
+ Array.prototype.forEach.call(box.querySelectorAll('.suspect'),function(sp){
+  sp.onclick=function(){
+   if(sp.classList.contains('fixed'))return;
+   var i=+sp.getAttribute('data-i');var er=court.errors[i];
+   optsBox.style.display='flex';
+   optsBox.innerHTML='<span style="font-size:.7rem;font-weight:800;color:var(--gold2)">صحّح الخطأ: </span>'+shuffle(er.o.slice()).map(function(o){return '<button class="pz-chip copt" data-v="'+esc(o)+'">'+esc(o)+'</button>';}).join('');
+   Array.prototype.forEach.call(optsBox.querySelectorAll('.copt'),function(b){b.onclick=function(){
+     var v=b.getAttribute('data-v');
+     if(v===er.fix){sp.textContent=er.fix;sp.classList.add('fixed');optsBox.style.display='none';
+      keys[done].textContent='🔑';keys[done].classList.add('lit');done++;
+      if(done===court.errors.length)win();}
+     else{G.mist++;b.classList.add('shake');setTimeout(function(){b.classList.remove('shake');},400);}
+   };});
+  };
+ });
+}
+function scaleMech(box,sc,win,G){
+ var items=shuffle(sc.items.slice());var done=0;var selBtn=null;
+ box.innerHTML='<div class="kkeys">'+sc.items.map(function(){return '<span class="kkey">🔒</span>';}).join('')+'</div>'
+ +'<div class="scalewrap">'+sc.sides.map(function(s,i){return '<div class="plate" data-i="'+i+'"><span class="pn">'+esc(s)+'</span><span class="its"></span></div>';}).join('')+'</div>'
+ +'<div class="sjtray">'+items.map(function(it,i){return '<button class="sjpiece scard" data-i="'+i+'">'+esc(it.s)+'</button>';}).join('')+'</div>';
+ var keys=box.querySelectorAll('.kkey');
+ function attempt(cb,plateIdx){
+  var plate=box.querySelectorAll('.plate')[plateIdx];
+  var it=items[+cb.getAttribute('data-i')];
+  if(it.side===plateIdx){
+   var chip=document.createElement('span');chip.className='it';chip.textContent=it.s;
+   plate.querySelector('.its').appendChild(chip);
+   cb.remove();keys[done].textContent='🔑';keys[done].classList.add('lit');done++;
+   if(done===sc.items.length)win();
+  }else{G.mist++;plate.classList.add('shake');cb.classList.add('shake');
+   setTimeout(function(){plate.classList.remove('shake');cb.classList.remove('shake');},400);}
+ }
+ Array.prototype.forEach.call(box.querySelectorAll('.plate'),function(pl){pl.onclick=function(){
+  if(selBtn){attempt(selBtn,+pl.getAttribute('data-i'));selBtn.classList.remove('sel');selBtn=null;}};});
+ Array.prototype.forEach.call(box.querySelectorAll('.scard'),function(cb){
+  cb.addEventListener('pointerdown',function(e){e.preventDefault();
+   var r=cb.getBoundingClientRect();
+   var g=cb.cloneNode(true);g.className='sjpiece scard drag';g.style.left=r.left+'px';g.style.top=r.top+'px';g.style.width=r.width+'px';document.body.appendChild(g);
+   cb.style.opacity='.35';
+   var drag={cb:cb,g:g,sx:e.clientX,sy:e.clientY,ox:r.left,oy:r.top,moved:false};
+   function mv(ev){if(!drag)return;var dx=ev.clientX-drag.sx,dy=ev.clientY-drag.sy;if(Math.hypot(dx,dy)>8)drag.moved=true;g.style.left=(drag.ox+dx)+'px';g.style.top=(drag.oy+dy)+'px';}
+   function up(ev){removeEventListener('pointermove',mv);removeEventListener('pointerup',up);if(!drag)return;var moved=drag.moved;var gg=drag.g;var cc=drag.cb;drag=null;gg.remove();cc.style.opacity='';
+    if(!moved){if(selBtn===cc){selBtn=null;cc.classList.remove('sel');}else{if(selBtn)selBtn.classList.remove('sel');selBtn=cc;cc.classList.add('sel');}return;}
+    var el=document.elementFromPoint(ev.clientX,ev.clientY);var pl=el&&el.closest?el.closest('.plate'):null;
+    if(pl)attempt(cc,+pl.getAttribute('data-i'));}
+   addEventListener('pointermove',mv);addEventListener('pointerup',up);});
+ });
+}
+/* ===== P3: بطاقات التعديل + التكيف ===== */
+var PERF={streak:0,tmist:0,tgates:0};
+try{var _pf=JSON.parse(localStorage.getItem('maqala_perf')||'null');if(_pf)PERF=_pf;}catch(e){}
+function savePerf(){try{localStorage.setItem('maqala_perf',JSON.stringify(PERF));}catch(e){}}
+function perfLevel(){if(PERF.tgates===0)return 'normal';
+ var avg=PERF.tmist/PERF.tgates;
+ if(PERF.streak>=2)return 'hard';
+ if(avg>=2)return 'easy';
+ return 'normal';}
+var MODS={
+ time:{i:'⏱',n:'ضد الساعة',d:'أنهِ قبل انتهاء الوقت لتحصد نجمة مكافأة.'},
+ fog:{i:'🌫',n:'وضع الضباب',d:'المعطيات ضبابية حتى تلمسها — ركّز!'},
+ spin:{i:'🌀',n:'قطع دوّارة',d:'قطع مائلة قليلًا لمزيد من التحدي.'}
+};
+function pickMod(level){if(level==='hard'){var ks=['time','fog','spin'];return ks[PERF.tgates%3];}
+ if(level==='normal'){return (PERF.tgates%2===0)?'spin':null;}
+ return null;}
+var gateTimerInt=null,gateMod=null,gateTimeLeft=0;
+function stopGateTimer(){if(gateTimerInt){clearInterval(gateTimerInt);gateTimerInt=null;}}
+function gateContent(G,mech,count){
+ var o={};
+ if(mech==='match')o.arr=G.match.pairs.slice(0,count);
+ else if(mech==='fill')o.arr=G.fill.slice(0,count);
+ else if(mech==='tf')o.arr=G.tf.slice(0,count);
+ else if(mech==='timeline')o.arr=G.timeline.slice(0,count);
+ else if(mech==='memory')o.arr=G.memory.pairs.slice(0,count);
+ else if(mech==='sjig')o.arr=G.sjig.parts.slice(0,count);
+ else if(mech==='court')o.obj={para:G.court.para,errors:G.court.errors};
+ else if(mech==='scale')o.obj={sides:G.scale.sides,items:G.scale.items.slice(0,count)};
+ return o;}
+function applyMod(box,mod){
+ if(!mod)return;
+ if(mod==='fog'){box.classList.add('mod-fog');
+  box.addEventListener('pointerover',function(e){var t=(e.target&&e.target.closest)?e.target.closest('.pz-chip,.tfrow,.fsent,.tlcard,.sjpiece,.scard,.memcard,.suspect,.plate,.sjslot,.tlslot'):null;if(t)t.classList.add('rev');},true);}
+ if(mod==='spin'){box.classList.add('mod-spin');}
+ if(mod==='time'){gateTimeLeft=90;var el=box.querySelector('#gateTimer');
+  stopGateTimer();
+  gateTimerInt=setInterval(function(){gateTimeLeft--;if(el)el.textContent='⏱ '+gateTimeLeft;
+   if(gateTimeLeft<=0){stopGateTimer();toast('⏱ انتهى الوقت! لا مكافأة هذه المرة.');}},1000);}}
+function renderGate(si){var area=gateSlides[si].querySelector('.pz-area');
+ stopGateTimer();gateMod=null;
+ if(solved[si]){area.innerHTML='<div class="pz-success"><div class="big">🏆</div><p>تم فتح الباب ✔</p><button class="qz-next" data-eq="'+si+'">📝 اختبار ختامي</button></div>';
+  var eb=area.querySelector('[data-eq]');if(eb)eb.onclick=function(){endQuiz(si);};return;}
+ var G=GATES[si]||GATES[0];
+ var mech=pickMech(si);
+ var level=perfLevel();
+ var count=(level==='easy')?3:4;
+ var mod=pickMod(level);gateMod=mod;
+ var C=gateContent(G,mech,count);
+ var title= mech==='timeline'?'🧭 المفتاح: رتّب محطات حياته':
+  mech==='fill'?'🗝 المفتاح: كلمة السر':
+  mech==='tf'?'⚖️ المفتاح: صح أم خطأ؟':
+  mech==='match'?'🔗 المفتاح: طابق النوع بوصفه':
+  mech==='memory'?'🃏 المفتاح: ذاكرة الأساتذة والمؤلفات':
+  mech==='sjig'?'🧩 المفتاح: رتّب نشأة المقالة':
+  mech==='court'?'⚖️ المفتاح: محكمة الأخطاء — صحّح الورقة':
+  '⚖️ المفتاح: ميزان الادّعاء والقدرة';
+ var modHtml= mod
+  ?('<div class="modcard"><span class="mi">'+MODS[mod].i+'</span><span>بطاقة تعديل: '+MODS[mod].n+' — '+MODS[mod].d+'</span>'+(mod==='time'?'<span class="gt" id="gateTimer">⏱ 90</span>':'')+'</div>')
+  :('<div class="modcard"><span class="mi">🎯</span><span>مستوى التكيف: '+(level==='easy'?'ميسّر (٣ مفاتيح)':level==='hard'?'متحدٍّ (٤ مفاتيح + تعديل)':'اعتيادي (٤ مفاتيح)')+'</span></div>');
+ area.innerHTML='<div class="pz-title">'+title+'</div>'+modHtml+'<div class="pz-body"></div>';
+ var body=area.querySelector('.pz-body');
+ var gateMist={mist:0};
+ var win=function(){stopGateTimer();
+  if(gateMod==='time'&&gateTimeLeft>0){META.stars.bonus=(META.stars.bonus||0)+1;saveMeta();toast('⏱ فزت ضمن الوقت! +⭐ مكافأة');}
+  solved[si]=true;
+  var st=gateMist.mist===0?3:gateMist.mist<=2?2:1;
+  META.stars['gate'+si]=Math.max(META.stars['gate'+si]||0,st);saveMeta();
+  PERF.tgates++;PERF.tmist+=gateMist.mist;PERF.streak=(gateMist.mist===0)?PERF.streak+1:0;savePerf();
+  try{localStorage.setItem('maqalaPuzzles',JSON.stringify(solved.map(function(v,i){return v?i:-1;}).filter(function(i){return i>=0;})));}catch(e){}
+  celebrate();refreshLocks();
+  setTimeout(function(){area.innerHTML='<div class="pz-success"><div class="big">🏆</div><p>أُفتح الباب! ✔</p></div>';
+   setTimeout(function(){endQuiz(si);},600);
+  },700);};
+ if(mech==='match')matchMech(body,C.arr,win,gateMist);
+ else if(mech==='fill')fillMech(body,C.arr,win,gateMist);
+ else if(mech==='tf')tfMech(body,C.arr,win,gateMist);
+ else if(mech==='timeline')timelineMech(body,C.arr,win,gateMist);
+ else if(mech==='memory')memoryMech(body,{pairs:C.arr},win,gateMist);
+ else if(mech==='sjig')sjigMech(body,{parts:C.arr},win,gateMist);
+ else if(mech==='court')courtMech(body,C.obj,win,gateMist);
+ else scaleMech(body,C.obj,win,gateMist);
+ applyMod(body,mod);
+}
+/* ===== الاختبار الختامي البسيط (بعد كل بوابة) ===== */
+var eqVeil=document.createElement('div');eqVeil.className='quiz-veil';eqVeil.innerHTML='<div class="glass quiz-card"><div id="eqBody"></div></div>';document.body.appendChild(eqVeil);
+function endQuiz(si,onDone){
+ var bank=QUIZ[si].slice(0,4);var i=0,score=0;
+ var body=eqVeil.querySelector('#eqBody');
+ eqVeil.classList.add('show');
+ function showQ(){
+  var q=bank[i];var opts=shuffle(q.o.map(function(o,idx){return{o:o,idx:idx};}));
+  body.innerHTML='<span class="qz-kick">📝 اختبار ختامي · '+SECTIONS[si].name+'</span><div class="qz-title">السؤال '+arNum(i+1)+' / '+arNum(bank.length)+'</div>'
+   +'<div class="qz-q">'+esc(q.q)+'</div>'
+   +'<div class="qz-opts">'+opts.map(function(op){return '<button class="qz-opt" data-i="'+op.idx+'">'+esc(op.o)+'</button>';}).join('')+'</div>'
+   +'<div class="qz-ex" id="exEx" style="display:none"></div>'
+   +'<div class="qz-foot"><span id="exScore">⭐ '+arNum(score)+'</span><button class="qz-next" id="exNext" style="display:none">'+(i===bank.length-1?'النتيجة':'التالي')+'</button></div>';
+  var locked=false;
+  Array.prototype.forEach.call(body.querySelectorAll('.qz-opt'),function(b){b.onclick=function(){
+    if(locked)return;locked=true;
+    var ci=+b.getAttribute('data-i');
+    if(ci===q.a){b.classList.add('ok');score++;}
+    else{b.classList.add('no');body.querySelectorAll('.qz-opt')[q.a].classList.add('ok');}
+    var ex=body.querySelector('#exEx');ex.style.display='block';
+    ex.innerHTML='💡 التثبيت: الإجابة الصحيحة = <b>'+esc(q.o[q.a])+'</b>';
+    body.querySelector('#exNext').style.display='inline-block';
+  };});
+  body.querySelector('#exNext').onclick=function(){i++;if(i<bank.length)showQ();else finish();};
+ }
+ function finish(){
+  var st=score>=4?3:score===3?2:1;
+  META.stars['quiz'+si]=Math.max(META.stars['quiz'+si]||0,st);
+  var sealNow=false;if(score>=3&&!META.seals[si]){META.seals[si]=true;sealNow=true;}
+  var before=rankInfo();saveMeta();var after=rankInfo();
+  body.innerHTML='<div class="qz-score"><span class="qz-kick">📝 نتيجة الاختبار الختامي</span>'
+   +'<div class="num">'+arNum(score)+' / '+arNum(bank.length)+'</div>'
+   +'<div class="eq-stars">'+'⭐'.repeat(st)+'</div>'
+   +(sealNow?'<div class="sealbadge">🏵 نلت ختم باب «'+SECTIONS[si].name+'»</div>':'')
+   +'<p>رتبتك الحالية: '+after.i+' '+after.n+'</p>'
+   +'<button class="qz-next" id="exRetry">🔁 إعادة</button> <button class="qz-close" id="exClose">✕</button></div>';
+  if(before.n!==after.n)toast('🎖 رقيت إلى رتبة '+after.n+' '+after.i);
+  celebrate();
+  body.querySelector('#exRetry').onclick=function(){endQuiz(si,onDone);};
+  body.querySelector('#exClose').onclick=function(){eqVeil.classList.remove('show');if(onDone)onDone();};
+ }
+ showQ();
+}
+/* ===== نافذة إنجازاتي ===== */
+var metaVeil=document.createElement('div');metaVeil.className='quiz-veil';metaVeil.innerHTML='<div class="glass quiz-card"><div id="metaBody"></div></div>';document.body.appendChild(metaVeil);
+function metaModal(){
+ var b=metaVeil.querySelector('#metaBody');var rk=rankInfo();
+ var rows=SECTIONS.map(function(s,i){
+  return '<div class="metarow"><span class="mn">'+s.name+'</span><span class="ms">'+(META.seals[i]?'🏵':'')+' · بوابة '+((META.stars['gate'+i]||0)?'⭐'.repeat(META.stars['gate'+i]):'—')+' · اختبار '+((META.stars['quiz'+i]||0)?'⭐'.repeat(META.stars['quiz'+i]):'—')+'</span></div>';
+ }).join('');
+ b.innerHTML='<span class="qz-kick">🏆 إنجازاتي</span>'
+  +'<div class="qz-score"><div class="num">'+rk.i+' '+rk.n+'</div><p>مجموع النجوم: '+arNum(totalStars())+'</p></div>'
+  +rows
+  +'<div style="text-align:center;margin-top:.8rem"><button class="qz-close" id="metaClose">✕ إغلاق</button></div>';
+ metaVeil.classList.add('show');
+ b.querySelector('#metaClose').onclick=function(){metaVeil.classList.remove('show');};
+ metaVeil.onclick=function(e){if(e.target===metaVeil)metaVeil.classList.remove('show');};
+}
+/* ===== 🎓 الاختبار الشامل النهائي (٣ جولات بمستويات) ===== */
+var EXAM={ title:'🎓 الاختبار الشامل النهائي', rounds:[
+ {type:'fill',name:'الجولة ١ · الفراغات',items:[
+   {s:'المقالة قطعة إنشائية طويلة تكتب ___ وتعالج موضوعًا معينًا.',a:'نثرًا',level:1},
+   {s:'يُعد الكاتب الفرنسي ___ منشئ المقالة الحديثة.',a:'مونتيني',level:1},
+   {s:'وُلد علي جواد الطاهر في مدينة ___ عام 1919م.',a:'الحلة',level:2},
+   {s:'حاز الطاهر الدكتوراه من جامعة ___ عام 1954م.',a:'السوربون',level:2},
+   {s:'المقالة التي تعتمد الأسلوب الأدبي المشع بالعاطفة تسمى ___.',a:'الذاتية',level:3},
+   {s:'درس الطاهر اللغة العربية وآدابها في ___.',a:'دار المعلمين العالية',level:3}]},
+ {type:'tf',name:'الجولة ٢ · صح أم خطأ',items:[
+   {s:'نشأت المقالة في الآداب الأوروبية الحديثة وارتبطت بالصحافة.',tf:true,level:1},
+   {s:'الفن العربي القديم المشابه للمقالة هو فن الرسائل.',tf:true,level:2},
+   {s:'حاز الطاهر الدكتوراه من جامعة بغداد.',tf:false,fix:'بل من السوربون في فرنسا عام 1954.',level:2},
+   {s:'الدعوة إلى الجديد الحقيقي تكون بطعن القديم وتركه.',tf:false,fix:'بل لن تكون بطعن القديم؛ فهما يتضافران معًا.',level:3},
+   {s:'توفي علي جواد الطاهر في بغداد عام 1996م.',tf:true,level:3}]},
+ {type:'mc',name:'الجولة ٣ · الاختيارات',items:[
+   {q:'من منشئ المقالة الحديثة؟',o:['مونتيني','الطهطاوي','زينب فواز','محمد حسين هيكل'],a:0,level:1},
+   {q:'أين وُلد علي جواد الطاهر؟',o:['الحلة','بغداد','البصرة','كربلاء'],a:0,level:1},
+   {q:'المقالة الموضوعية تسمى أيضًا:',o:['العلمية','الأدبية','الذاتية','الشخصية'],a:0,level:2},
+   {q:'من مؤلفات علي جواد الطاهر:',o:['الباب الضيق','الثابت والمتحوّل','النخلة والجيران','أوراق الزيتون'],a:0,level:2},
+   {q:'الفكرة الرئيسة لمقالة الطاهر:',o:['بيان زيف مدّعي التجديد','مدح القديم مطلقًا','رفض الجديد مطلقًا','وصف الصراع السياسي'],a:0,level:3},
+   {q:'خصائص المقالة الأدبية في مقالة الطاهر:',o:['متحققة جميعها','غير متحققة','متحققة جزئيًا','منعدمة'],a:0,level:3}]}
+]};
+var examVeil=document.createElement('div');examVeil.className='quiz-veil';examVeil.innerHTML='<div class="glass quiz-card"><div id="exBody2"></div></div>';document.body.appendChild(examVeil);
+function examBest(){try{return +localStorage.getItem('maqala_exbest')||0;}catch(e){return 0;}}
+function buildFillBank(items,it){var bank=[it.a];items.forEach(function(o){if(o.a!==it.a&&bank.indexOf(o.a)<0&&bank.length<4)bank.push(o.a);});return bank;}
+function startExam(){
+ var body=examVeil.querySelector('#exBody2');examVeil.classList.add('show');
+ var ri=0,score=0,max=0,breakdown=[];
+ function rMax(r){return r.items.reduce(function(a,it){return a+(it.level||1);},0);}
+ function lvBadge(l){return ['⭐ سهل','⭐⭐ متوسط','⭐⭐⭐ صعب'][(l||1)-1];}
+ function finishExam(){
+   var pct=Math.round(score/max*100);
+   var stars=pct>=85?3:pct>=65?2:pct>=40?1:0;
+   var passed=pct>=60;
+   if(passed&&!META.seals['exam'])META.seals['exam']=true;
+   META.stars['exam']=Math.max(META.stars['exam']||0,stars);saveMeta();
+   var best=examBest(),isRec=pct>best;
+   if(isRec){try{localStorage.setItem('maqala_exbest',pct);}catch(e){}}
+   var rows=breakdown.map(function(b){return '<div class="metarow"><span class="mn">'+b.n+'</span><span class="ms">'+arNum(b.g)+' / '+arNum(b.m)+'</span></div>';}).join('');
+   body.innerHTML='<div class="qz-score"><span class="qz-kick">🎓 نتيجة الاختبار الشامل</span>'
+    +'<div class="num">'+arNum(pct)+'٪</div>'
+    +'<div class="eq-stars">'+'⭐'.repeat(stars)+'</div>'
+    +(passed?'<div class="sealbadge">🎓 نجحت في الاختبار الشامل</div>':'<p style="color:#b3403f;font-weight:800">لم تبلغ درجة النجاح (٦٠٪) بعد — أعد المحاولة!</p>')
+    +(isRec?'<div class="sealbadge">🏆 رقم قياسي جديد: '+arNum(pct)+'٪</div>':'')
+    +rows+'<p>رتبتك: '+rankInfo().i+' '+rankInfo().n+'</p>'
+    +'<button class="qz-next" id="exRetry2">🔁 إعادة</button> <button class="qz-close" id="exClose2">✕</button></div>';
+   celebrate();
+   body.querySelector('#exRetry2').onclick=startExam;
+   body.querySelector('#exClose2').onclick=function(){examVeil.classList.remove('show');};
+ }
+ function runRound(){
+   var r=EXAM.rounds[ri];
+   var items=r.items.slice().sort(function(a,b){return (a.level||1)-(b.level||1);});
+   var ii=0,rg=0;max+=rMax(r);
+   function item(){
+     var it=items[ii],lv=it.level||1,optsArr=[],correct='';
+     if(r.type==='fill'){optsArr=shuffle(buildFillBank(r.items,it).map(function(w){return{t:w,ok:w===it.a};}));correct=it.a;}
+     else if(r.type==='tf'){optsArr=[{t:'✔ صح',ok:it.tf===true},{t:'✘ خطأ',ok:it.tf===false}];correct=it.tf?'✔ صح':'✘ خطأ';}
+     else{optsArr=shuffle(it.o.map(function(o,i){return{t:o,ok:i===it.a};}));correct=it.o[it.a];}
+     var qhtml= r.type==='fill' ? '<div class="qz-q">'+esc(it.s).replace('___','<b class="blank">؟؟؟</b>')+'</div>'
+              : r.type==='tf'  ? '<div class="qz-q">'+esc(it.s)+'</div>'
+              : '<div class="qz-q">'+esc(it.q)+'</div>';
+     body.innerHTML='<span class="qz-kick">'+r.name+'</span><div class="qz-title">السؤال '+arNum(ii+1)+' / '+arNum(items.length)+' · '+lvBadge(lv)+'</div>'
+      +qhtml
+      +'<div class="qz-opts">'+optsArr.map(function(o,i){return '<button class="qz-opt" data-i="'+i+'">'+esc(o.t)+'</button>';}).join('')+'</div>'
+      +'<div class="qz-ex" id="exEx2" style="display:none"></div>'
+      +'<div class="qz-foot"><span id="exScore2">النقاط: '+arNum(score)+'</span><button class="qz-next" id="exNext2" style="display:none">'+(ii===items.length-1?(ri===EXAM.rounds.length-1?'النتيجة':'الجولة التالية'):'التالي')+'</button></div>';
+     var locked=false;
+     Array.prototype.forEach.call(body.querySelectorAll('.qz-opt'),function(b){b.onclick=function(){
+        if(locked)return;locked=true;
+        var ok=optsArr[+b.getAttribute('data-i')].ok;
+        if(ok){b.classList.add('ok');score+=lv;rg+=lv;}
+        else{b.classList.add('no');
+          var ci=optsArr.findIndex(function(o){return o.ok;});
+          var cb=body.querySelector('.qz-opt[data-i="'+ci+'"]');if(cb)cb.classList.add('ok');}
+        var ex=body.querySelector('#exEx2');ex.style.display='block';
+        ex.innerHTML=ok?('✅ أحسنت! +'+arNum(lv)+' نقطة'):('💡 الصحيح: '+esc(correct)+(it.fix?' — '+esc(it.fix):''));
+        body.querySelector('#exScore2').textContent='النقاط: '+arNum(score);
+        body.querySelector('#exNext2').style.display='inline-block';
+     };});
+     body.querySelector('#exNext2').onclick=function(){
+        ii++;
+        if(ii<items.length)item();
+        else{breakdown.push({n:r.name,g:rg,m:rMax(r)});ri++;
+          if(ri<EXAM.rounds.length)runRound();else finishExam();}
+     };
+   }
+   item();
+ }
+ runRound();
+}
+/* ===== بازل الأجوبة (لعبة مستقلة) ===== */
+(function(){var AC=null;function ac(){try{if(!AC)AC=new (window.AudioContext||window.webkitAudioContext)();if(AC.state==='suspended')AC.resume();}catch(e){}return AC;}
+ function beep(f,d,type,v){var a=ac();if(!a)return;type=type||'triangle';v=v||0.12;var t=a.currentTime,o=a.createOscillator(),g=a.createGain();o.type=type;o.frequency.value=f;g.gain.setValueAtTime(v,t);g.gain.exponentialRampToValueAtTime(.0001,t+d);o.connect(g);g.connect(a.destination);o.start(t);o.stop(t+d);}
+ var sndOk=function(){beep(660,.12);setTimeout(function(){beep(880,.15);},90);};var sndBad=function(){beep(160,.2,'sawtooth',.08);};var sndWin=function(){[523,659,784,1046].forEach(function(f,i){setTimeout(function(){beep(f,.25);},i*120);});};
+ var btn=document.getElementById('jzBtn');
+ var veil=document.createElement('div');veil.className='jz-veil';veil.innerHTML='<div class="glass jz-card"><div class="jz-head"><span class="jz-stage" id="jzStage"></span><span class="jz-stars" id="jzStars"></span><span class="jz-mist" id="jzMist"></span><button class="jz-close" id="jzClose">✕</button></div><div class="jz-q" id="jzQ"></div><div class="jz-strip" id="jzStrip"></div><div class="jz-reveal" id="jzReveal" hidden></div><div class="jz-traylabel">🧩 اسحب القطعة (تتحرك ولا تختفي) أو انقرها ثم انقر الخانة</div><div class="jz-tray" id="jzTray"></div><div class="jz-final" id="jzFinal" hidden></div></div>';document.body.appendChild(veil);
+ function Q(id){return veil.querySelector('#'+id);}
+ var SC=5,COUNTS=[3,4,4,5,6],DIST=[0,1,1,2,2],MAXS=SC*3;
+ var qs3=[],stage=0,mist=0,stars=0,pieces=[],selected=null,locked=0,drag=null;
+ function splitC(q){var f=q.a.join(' ');var c=f.split(/،|؛/).map(function(s){return s.trim();}).filter(function(s){return s.length>2;});return c.length?c:[f];}
+ function ensure(cl,Nn){cl=cl.slice();while(cl.length<Nn){var bi=-1,bw=1;cl.forEach(function(c,i){var w=c.split(' ').length;if(w>bw){bw=w;bi=i;}});if(bi<0)break;var w2=cl[bi].split(' ');var m=Math.ceil(w2.length/2);cl.splice(bi,1,w2.slice(0,m).join(' '),w2.slice(m).join(' '));}return cl;}
+ function group(cl,Nn){var g=[],b=Math.floor(cl.length/Nn),r=cl.length%Nn,i=0;for(var k=0;k<Nn;k++){var s=b+(k<r?1:0);g.push(cl.slice(i,i+s).join('، '));i+=s;}return g;}
+ function dist(q,D,cor){if(!D)return[];var pool=[];SECTIONS[currentSection()].qs.forEach(function(o){if(o===q)return;splitC(o).forEach(function(c){if(cor.indexOf(c)<0)pool.push(c);});});return shuffle(pool).slice(0,D);}
+ function head(){Q('jzStars').textContent='⭐ '+arNum(stars);Q('jzMist').textContent='أخطاء: '+arNum(mist);}
+ function strip(Nn){var s=Q('jzStrip');s.innerHTML='';for(var i=0;i<Nn;i++){var d=document.createElement('div');d.className='jz-slot';d.setAttribute('data-i',i);d.innerHTML='<span class="num">'+arNum(i+1)+'</span>؟';d.onclick=function(){if(selected)attempt(selected,+this.getAttribute('data-i'));};s.appendChild(d);}}
+ function tray(){var t=Q('jzTray');t.innerHTML='';pieces.forEach(function(p){if(p.placed)return;var b=document.createElement('button');b.className='jz-piece';b.textContent=p.text;b.addEventListener('pointerdown',function(e){down(e,p,b);});t.appendChild(b);});}
+ function clearSel(){selected=null;Array.prototype.forEach.call(veil.querySelectorAll('.jz-piece.sel'),function(x){x.classList.remove('sel');});}
+ function down(e,p,b){e.preventDefault();var r=b.getBoundingClientRect();var g=b.cloneNode(true);g.className='jz-piece jz-ghost';g.style.left=r.left+'px';g.style.top=r.top+'px';g.style.width=r.width+'px';document.body.appendChild(g);b.classList.add('lifting');
+  drag={p:p,b:b,g:g,sx:e.clientX,sy:e.clientY,ox:r.left,oy:r.top,moved:false};
+  function mv(ev){if(!drag)return;var dx=ev.clientX-drag.sx,dy=ev.clientY-drag.sy;if(Math.hypot(dx,dy)>8)drag.moved=true;g.style.left=(drag.ox+dx)+'px';g.style.top=(drag.oy+dy)+'px';}
+  function up(ev){removeEventListener('pointermove',mv);removeEventListener('pointerup',up);if(!drag)return;var moved=drag.moved,gh=drag.g,pc=drag.p,bt=drag.b;drag=null;gh.remove();bt.classList.remove('lifting');
+   if(!moved){if(selected===pc)clearSel();else{clearSel();selected=pc;bt.classList.add('sel');}return;}
+   var el=document.elementFromPoint(ev.clientX,ev.clientY);var sl=el&&el.closest?el.closest('.jz-slot'):null;if(sl)attempt(pc,+sl.getAttribute('data-i'));}
+  addEventListener('pointermove',mv);addEventListener('pointerup',up);}
+ function attempt(p,si2){var slot=veil.querySelector('.jz-slot[data-i="'+si2+'"]');if(!slot||slot.classList.contains('filled'))return;
+  if(p.home===si2){slot.classList.add('filled');slot.innerHTML=p.text;p.placed=true;locked++;sndOk();clearSel();tray();if(locked===COUNTS[stage])done();}
+  else{mist++;head();sndBad();slot.classList.add('shake');setTimeout(function(){slot.classList.remove('shake');},420);if(selected===p)clearSel();}}
+ function load(){var q=qs3[stage];if(!q){final();return;}var Nn=COUNTS[stage],D=DIST[stage];mist=0;locked=0;selected=null;
+  var cl=ensure(splitC(q),Nn);var gr=group(cl,Nn);var cor=gr.map(function(t,i){return {text:t,home:i,id:'c'+i};});var di=dist(q,D,gr).map(function(t,i){return {text:t,home:-1,id:'d'+i};});
+  pieces=shuffle(cor.concat(di));Q('jzQ').textContent='س: '+q.q;Q('jzStage').textContent='المرحلة '+arNum(stage+1)+' / '+arNum(SC);Q('jzReveal').hidden=true;Q('jzFinal').hidden=true;strip(Nn);tray();head();}
+ function done(){var st=mist===0?3:mist<=2?2:1;stars+=st;head();sndWin();celebrate();var q=qs3[stage];var rv=Q('jzReveal');rv.hidden=false;rv.innerHTML='✔ الجواب: '+esc(q.a.join(' '))+'<br><b>نجوم: '+'⭐'.repeat(st)+'</b>';Q('jzTray').innerHTML='';setTimeout(function(){stage++;if(stage<SC)load();else final();},2200);}
+ function final(){var f=Q('jzFinal');Q('jzStrip').innerHTML='';Q('jzQ').textContent='';Q('jzReveal').hidden=true;f.hidden=false;
+  var msg=stars>=MAXS-2?'مذهل 🏆':stars>=MAXS*.6?'ممتاز 🌟':'جيد 👍';f.innerHTML='<div class="big">'+'⭐'.repeat(Math.max(Math.round(stars/3),1))+'</div><p>نجومك: '+arNum(stars)+' من '+arNum(MAXS)+'<br>'+msg+'</p><button class="jz-close" id="jzAgain">🔁 مجددًا</button> <button class="jz-close" id="jzExit">✕ إغلاق</button>';celebrate();
+  f.querySelector('#jzAgain').onclick=start;f.querySelector('#jzExit').onclick=function(){veil.classList.remove('show');};}
+ function start(){var pool=SECTIONS[currentSection()].qs.slice();if(pool.length<SC)pool=SECTIONS.reduce(function(a,s){return a.concat(s.qs);},[]);qs3=shuffle(pool).slice(0,SC);stage=0;stars=0;veil.classList.add('show');load();}
+ btn.onclick=start;Q('jzClose').onclick=function(){veil.classList.remove('show');};veil.addEventListener('click',function(e){if(e.target===veil)veil.classList.remove('show');});})();
+/* ===== الاختبار المقفل (يُفتح بعد قراءة كل العبارات) ===== */
+(function(){var btn=document.getElementById('quizBtn');
+ var veil=document.createElement('div');veil.className='quiz-veil';veil.innerHTML='<div class="glass quiz-card"><div id="quizBody"></div></div>';document.body.appendChild(veil);
+ var body=veil.querySelector('#quizBody');var si=0,qi=0,score=0,answ=false;function close(){veil.classList.remove('show');}veil.addEventListener('click',function(e){if(e.target===veil)close();});
+ function prog(s){var seen=0,tot=0;QS.forEach(function(o){if(o&&o.sec===s){seen+=Object.keys(o.seen).length;tot+=o.segs.length;}});return tot?Math.round(seen/tot*100):0;}
+ function showQ(){answ=false;var q=QUIZ[si][qi];if(!q){finish();return;}body.innerHTML='<span class="qz-kick">اختبار · '+SECTIONS[si].name+'</span><div class="qz-title">السؤال '+arNum(qi+1)+' من '+arNum(QUIZ[si].length)+'</div><div class="qz-q">'+esc(q.q)+'</div><div class="qz-opts">'+q.o.map(function(o,i){return '<button class="qz-opt" data-i="'+i+'">'+esc(o)+'</button>';}).join('')+'</div><div class="qz-foot"><span id="qzScore">النقاط: '+arNum(score)+'</span><button class="qz-next" id="qzNext" style="display:none">'+(qi===QUIZ[si].length-1?'النتيجة':'التالي')+'</button></div>';
+  Array.prototype.forEach.call(body.querySelectorAll('.qz-opt'),function(b){b.onclick=function(){if(answ)return;answ=true;var i=+b.getAttribute('data-i');if(i===q.a){b.classList.add('ok');score++;}else{b.classList.add('no');body.querySelectorAll('.qz-opt')[q.a].classList.add('ok');}Array.prototype.forEach.call(body.querySelectorAll('.qz-opt'),function(x){x.style.pointerEvents='none';});body.querySelector('#qzScore').textContent='النقاط: '+arNum(score);body.querySelector('#qzNext').style.display='inline-block';};});
+  body.querySelector('#qzNext').onclick=function(){qi++;if(qi<QUIZ[si].length)showQ();else finish();};}
+ function finish(){var tot=QUIZ[si].length,pct=Math.round(score/tot*100);var msg=pct===100?'ممتاز 🏆':pct>=70?'جيد جدًا 🌟':pct>=50?'لا بأس 👍':'أعد القراءة 📖';
+  body.innerHTML='<div class="qz-score"><span class="qz-kick">النتيجة</span><div class="num">'+arNum(score)+' / '+arNum(tot)+'</div><p>'+msg+'</p><button class="qz-next" id="qzRetry">إعادة</button> <button class="qz-opt qz-close" id="qzClose">إغلاق</button></div>';
+  body.querySelector('#qzRetry').onclick=function(){qi=0;score=0;showQ();};body.querySelector('#qzClose').onclick=close;}
+ btn.onclick=function(){si=currentSection();var P=prog(si);if(P<100){body.innerHTML='<div class="qz-lock"><div class="lk">🔒</div><span class="qz-kick">مقفل</span><p>قرأتَ '+arNum(P)+'٪ من الباب.<br>المس كل العبارات لفتحه.</p><button class="qz-opt qz-close" id="qzClose">سأكمل</button></div>';body.querySelector('#qzClose').onclick=close;}else{qi=0;score=0;showQ();}veil.classList.add('show');};})();
+/* ===== الأوضاع + ملء الشاشة ===== */
+var currentMode='tablet';var MODE_KEY='maqalaMode';var MODES={phone:'هاتف',tablet:'آيباد',present:'عرض'};
+function secOf(i){var m=slideMeta[i];if(m&&m.sec!==undefined)return m.sec;if(m&&m.type==='end')return SECTIONS.length;return -1;}
+var visited={};
+function renderNav(){
+ var list=document.getElementById('npList');if(!list)return;
+ list.innerHTML='';
+ slideMeta.forEach(function(m,i){
+  var ts=secOf(i);
+  var locked=(ts>=1&&ts<=SECTIONS.length-1&&!solved[ts-1])||(ts===SECTIONS.length&&!solved[SECTIONS.length-1]);
+  var d=document.createElement('div');
+  d.className='np-item'+(i===idx?' cur':'')+(visited[i]?' vis':'')+(locked?' lock':'');
+  d.innerHTML='<span class="no">'+(visited[i]?'✓':arNum(i+1))+'</span><span class="ti">'+(m.title||'')+'</span><span class="st">'+(i===idx?'◀ الآن':(visited[i]?'تم':''))+'</span>';
+  d.onclick=function(){goTo(i);document.getElementById('navPanel').classList.remove('open');};
+  list.appendChild(d);
+ });
+ var done=0;QS.forEach(function(o){if(o)done+=Object.keys(o.seen).length;});
+ var pct=Math.round(done/totalSeg*100);
+ document.getElementById('npPct').textContent='التقدم: '+arNum(pct)+'٪';
+ var maxV=0;for(var k in visited)maxV=Math.max(maxV,+k);
+ document.getElementById('npReach').textContent='وصلت إلى: '+arNum(maxV+1)+'/'+arNum(N);
+}
+function refreshLocks(){renderNav();}
+document.getElementById('navBtn').onclick=function(){renderNav();document.getElementById('navPanel').classList.add('open');};
+document.getElementById('navClose').onclick=function(){document.getElementById('navPanel').classList.remove('open');};
+document.getElementById('glossBtn').onclick=function(){fillDrawer(currentSection());document.getElementById('drawer').classList.add('open');};
+var edgeMenu=document.getElementById('edgeMenu'),menuFab=document.getElementById('menuFab');
+function closeEM(){edgeMenu.classList.remove('show');menuFab.classList.remove('open');}
+menuFab.onclick=function(e){e.stopPropagation();edgeMenu.classList.toggle('show');menuFab.classList.toggle('open',edgeMenu.classList.contains('show'));};
+document.addEventListener('click',function(e){if(!e.target.closest('#edgeMenu')&&!e.target.closest('#menuFab'))closeEM();});
+edgeMenu.addEventListener('click',function(e){var b=e.target.closest('.em-item');if(!b)return;var a=b.getAttribute('data-act');
+ if(a==='nav'){document.getElementById('navBtn').click();closeEM();}
+ else if(a==='gloss'){document.getElementById('glossBtn').click();closeEM();}
+ else if(a==='jz'){document.getElementById('jzBtn').click();closeEM();}
+ else if(a==='quiz'){document.getElementById('quizBtn').click();closeEM();}
+ else if(a==='eq'){endQuiz(currentSection());closeEM();}
+ else if(a==='exam'){startExam();closeEM();}
+ else if(a==='meta'){metaModal();closeEM();}
+ else if(a==='fs'){toggleFS();closeEM();}
+ else if(a==='theme'){toggleTheme();}
+ else if(a==='auto'){scaleMode='auto';applyScale();toast('📏 القياس تلقائي حسب الشاشة');}
+ else if(a==='zin'){scaleMode='manual';kScale=clampN(kScale*1.12,0.6,1.6);applyScale();toast('➕ تكبير يدوي: '+Math.round(kScale*100)+'٪');}
+ else if(a==='zout'){scaleMode='manual';kScale=clampN(kScale/1.12,0.6,1.6);applyScale();toast('➖ تصغير يدوي: '+Math.round(kScale*100)+'٪');}
+ else if(a==='m-phone'){setMode('phone');closeEM();}
+ else if(a==='m-tablet'){setMode('tablet');closeEM();}
+ else if(a==='m-present'){setMode('present');closeEM();}
+});
+function wheelRadius(n){var f=1;if(currentMode==='phone')f=.72;if(currentMode==='present')f=1.18;return Math.min(60+n*14,130)*f;}
+function updateWheels(){QS.forEach(function(o){if(!o)return;var R=wheelRadius(o.segs.length);Array.prototype.forEach.call(o.wheel.querySelectorAll('.card'),function(c){c.style.setProperty('--R',(-R)+'px');});});}
+function _applyModeBase(m){currentMode=m;document.body.classList.remove('mode-phone','mode-tablet','mode-present');document.body.classList.add('mode-'+m);updateWheels();updateProgress();applyScale();}
+function applyMode(m){_applyModeBase(m);}
+function setMode(m){applyMode(m);try{localStorage.setItem(MODE_KEY,m);}catch(e){}}
+function detectMode(){if(matchMedia('(pointer:coarse)').matches)return 'phone';return innerWidth<768?'phone':'tablet';}
+var IN_FRAME=(window.top!==window.self);
+var isIOS=/iPad|iPhone|iPod/.test(navigator.userAgent)||(navigator.platform==='MacIntel'&&navigator.maxTouchPoints>1);
+function fsSupported(){var el=document.documentElement;return !!(el.requestFullscreen||el.webkitRequestFullscreen||el.mozRequestFullScreen||el.msRequestFullscreen);}
+function fsActive(){return !!(document.fullscreenElement||document.webkitFullscreenElement||document.mozFullScreenElement||document.msFullscreenElement);}
+function lockLand(){try{if(screen.orientation&&screen.orientation.lock)screen.orientation.lock('landscape').catch(function(){});}catch(e){}}
+function enterFS(){var el=document.documentElement;
+ var req=el.requestFullscreen||el.webkitRequestFullscreen||el.mozRequestFullScreen||el.msRequestFullscreen;
+ if(!req)return false;
+ try{var p=req.call(el);
+  if(p&&p.then){p.then(lockLand).catch(function(){goImmersive();});}
+  else lockLand();
+  return true;
+ }catch(e){return false;}}
+function exitFS(){var ex=document.exitFullscreen||document.webkitExitFullscreen||document.mozCancelFullScreen||document.msExitFullscreen;
+ if(ex){try{ex.call(document);}catch(e){}}}
+function iosGuide(){
+ try{if(localStorage.getItem('maqala_iosGuide'))return;localStorage.setItem('maqala_iosGuide','1');}catch(e){}
+ var g=document.createElement('div');
+ g.style.cssText='position:fixed;inset:0;z-index:900;background:rgba(25,23,19,.7);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);display:flex;align-items:center;justify-content:center;padding:20px';
+ g.innerHTML='<div style="background:#fff;border-radius:18px;max-width:430px;padding:22px;font-family:Tajawal,sans-serif;text-align:center;color:#26221c">'
+ +'<div style="font-size:2.2rem">📱</div><h3 style="margin:.4rem 0;font-size:1.1rem">الملء الكامل على الآيفون</h3>'
+ +'<p style="font-size:.85rem;line-height:1.9;color:#4a443a">كل متصفحات الآيفون (حتى كروم) <b>ممنوعة</b> من ملء الشاشة بقرار من آبل.<br><b>الحل الوحيد لملء حقيقي:</b><br>١) افتح التطبيق من رابط خارجي (ليس Apps Script)<br>٢) مشاركة <b>⤴</b> ← <b>إضافة إلى الشاشة الرئيسية</b><br>٣) افتحه من الأيقونة → ملء كامل بلا أشرطة.</p>'
+ +'<button id="iosGuideOk" style="margin-top:.6rem;background:linear-gradient(120deg,#a63d40,#7c2b2e);border:none;color:#f6f2ea;font-family:Tajawal,sans-serif;font-weight:800;padding:.6rem 1.6rem;border-radius:12px;cursor:pointer">فهمت ✨</button></div>';
+ document.body.appendChild(g);
+ g.querySelector('#iosGuideOk').onclick=function(){g.remove();};
+}
+function goImmersive(){document.body.classList.add('immersive');
+ setTimeout(function(){window.scrollTo(0,1);},120);
+ toast(isIOS||IN_FRAME?'✨ وضع الملء الذكي مفعّل\nسفاري الآيفون لا يدعم ملء الشاشة الويبّي':'✨ وضع الملء الذكي مفعّل');
+ if(isIOS)iosGuide();}
+function stopImmersive(){document.body.classList.remove('immersive');}
+function toggleFS(){
+ if(fsActive()){exitFS();stopImmersive();return;}
+ if(document.body.classList.contains('immersive')){stopImmersive();return;}
+ if(!isIOS&&!IN_FRAME&&fsSupported()){
+  if(enterFS())return;
+ }
+ goImmersive();
+}
+addEventListener('resize',function(){updateWheels();applyScale();var s=null;try{s=localStorage.getItem(MODE_KEY);}catch(e){}if(!s)applyMode(detectMode());});
+/* ===== العجلة + التكبير + المصطلحات ===== */
+function rotateWheel(g,inst){var o=QS[g],w=o.wheel;if(!o||o.selP<0)return;if(inst){w.style.transition='none';Array.prototype.forEach.call(w.querySelectorAll('.card-in'),function(c){c.style.transition='none';});}w.style.setProperty('--rot',(-o.selP*o.step)+'deg');Array.prototype.forEach.call(w.querySelectorAll('.card-in'),function(c,i){c.classList.toggle('sel',i===o.selP);});if(inst){void w.offsetWidth;w.style.transition='';Array.prototype.forEach.call(w.querySelectorAll('.card-in'),function(c){c.style.transition='';});}o.pointer.classList.remove('bounce');void o.pointer.offsetWidth;o.pointer.classList.add('bounce');}
+function showZoom(g,i){var o=QS[g],nm=imgSrc(o.sec+1,o.qi+1,i+1);var img=o.zoomimg;img.setAttribute('data-name',imgKey(o.sec+1,o.qi+1,i+1));img.onerror=function(){img.onerror=null;img.src=phSrc(img.getAttribute('data-name'));};img.src=nm;o.zoomtxt.textContent=SECTIONS[o.sec].qs[o.qi].a[i];o.zoombadge.textContent='فقرة '+arNum(i+1)+' من '+arNum(o.segs.length);o.zoomframe.classList.add('show');}
+function selectSeg(g,i){var o=QS[g];o.selP=i;o.seen[i]=true;o.segs.forEach(function(s,si){s.classList.toggle('act',si===i);s.classList.toggle('seen',!!o.seen[si]);});o.cap.innerHTML='العبارة <b>'+arNum(i+1)+'</b> من '+arNum(o.segs.length);rotateWheel(g,false);showZoom(g,i);updateProgress();}
+var tip=document.getElementById('tip');
+function openTip(ti,si,anchor){var tm=SECTIONS[si].terms[ti];if(!tm)return;document.getElementById('tipT').textContent=tm.t;document.getElementById('tipD').textContent=tm.d;var r=anchor.getBoundingClientRect();tip.classList.add('show');var tw=tip.offsetWidth,th=tip.offsetHeight;var x=r.left+r.width/2-tw/2,y=r.top-th-10;x=Math.max(10,Math.min(innerWidth-tw-10,x));if(y<70)y=r.bottom+10;tip.style.left=x+'px';tip.style.top=y+'px';}
+document.addEventListener('click',function(e){if(!e.target.closest('.term')&&!e.target.closest('#tip'))tip.classList.remove('show');});
+var drawer=document.getElementById('drawer');
+function fillDrawer(si){document.getElementById('dTitle').textContent='مصطلحات · '+SECTIONS[si].name;var L=document.getElementById('dList');L.innerHTML='';SECTIONS[si].terms.forEach(function(tm,ti){var d=document.createElement('div');d.className='ditem';d.innerHTML='<button class="dterm">'+esc(tm.t)+'<span class="car">‹</span></button><div class="ddef"><div>'+esc(tm.d)+'</div></div>';d.querySelector('.dterm').onclick=function(){d.classList.toggle('open');};L.appendChild(d);});}
+document.getElementById('dClose').onclick=function(){drawer.classList.remove('open');};
+function currentSection(){var m=slideMeta[idx];return (m&&m.sec!==undefined)?m.sec:0;}
+/* ===== التقدم + التنقل ===== */
+var fillEl=document.getElementById('fill'),orbEl=document.getElementById('orb');
+function updateProgress(){var done=0;QS.forEach(function(o){if(o)done+=Object.keys(o.seen).length;});var pct=Math.round(done/totalSeg*100);
+ document.getElementById('pct').textContent=arNum(pct)+'٪';
+ var np=document.getElementById('npPct');if(np)np.textContent='التقدم: '+arNum(pct)+'٪';
+ fillEl.style.height=pct+'%';orbEl.style.bottom=pct+'%';
+ if(idx===N-1){document.getElementById('endPct').textContent=arNum(pct)+'٪';document.getElementById('endFill').style.width=pct+'%';document.getElementById('endMsg').textContent=pct===100?'أتقنت جميع العبارات 🏆':pct>=60?'تقدم رائع 🌟':'عُد والمس العبارات 📖';}}
+var idx=0;
+function goTo(n){n=Math.max(0,Math.min(N-1,n));var ts=secOf(n);
+ if(ts>=1&&ts<=SECTIONS.length-1&&!solved[ts-1]){toast('🔒 حُلّ لغز باب «'+SECTIONS[ts-1].name+'» أولًا!');return;}
+ if(ts===SECTIONS.length&&!solved[SECTIONS.length-1]){toast('🔒 أكمل الألغاز أولًا!');return;}
+ idx=n;visited[idx]=true;deck.style.setProperty('--idx',idx);
+ slides.forEach(function(s,i){s.classList.toggle('act',i===idx);});
+ document.getElementById('wm').textContent=slideMeta[idx].wm;
+ clearParallax();updateProgress();refreshLocks();
+ if(drawer.classList.contains('open'))fillDrawer(currentSection());}
+function clearParallax(){slides.forEach(function(s){var q=s.querySelector('.qinner');if(q)q.style.transform='';});}
+var sx=null,dragX=0,dragging=false,hInt=null,wasDrag=false,lastT=0,vel=0;
+document.addEventListener('pointerdown',function(e){
+ if(e.target.closest('.jz-piece,.tlcard,.sjpiece,.scard,.jz-veil.show,.quiz-veil.show,.drawer.open,.navPanel,.edgeMenu,input,textarea,select'))return;
+ sx=e.clientX;dragX=0;dragging=false;hInt=null;vel=0;lastT=Date.now();deck.classList.remove('anim');
+},true);
+addEventListener('pointermove',function(e){if(sx===null)return;var dx=e.clientX-sx;if(hInt===null){if(Math.abs(dx)<12)return;hInt=true;}dragging=true;var d=dx;if((idx===0&&d>0)||(idx===N-1&&d<0))d=d/3;deck.style.setProperty('--drag',d+'px');var now=Date.now();if(now-lastT>0)vel=(dx-dragX)/(now-lastT);lastT=now;dragX=dx;var a=slides[idx].querySelector('.qinner');if(a)a.style.transform='translateX('+(dx*.12)+'px)';});
+document.addEventListener('pointerup',function(e){if(sx===null)return;sx=null;deck.classList.add('anim');deck.style.setProperty('--drag','0px');
+ if(dragging){var flick=Math.abs(vel)>0.4;if(Math.abs(dragX)>40||flick)goTo(idx+(dragX>0?1:-1));wasDrag=true;setTimeout(function(){wasDrag=false;},90);dragging=false;}
+ clearParallax();},true);
+deck.addEventListener('click',function(e){if(wasDrag){e.preventDefault();e.stopPropagation();}},true);
+addEventListener('keydown',function(e){if(e.key==='Escape'){drawer.classList.remove('open');tip.classList.remove('show');document.getElementById('navPanel').classList.remove('open');closeEM();eqVeil.classList.remove('show');metaVeil.classList.remove('show');examVeil.classList.remove('show');QS.forEach(function(o){if(o)o.zoomframe.classList.remove('show');});document.body.classList.remove('immersive');}else if(e.key==='f'||e.key==='F')toggleFS();else if(e.key==='ArrowRight')goTo(idx+1);else if(e.key==='ArrowLeft')goTo(idx-1);else if(e.key==='Home')goTo(0);else if(e.key==='End')goTo(N-1);});
+document.getElementById('replay').onclick=function(){goTo(0);};
+document.addEventListener('pointerdown',function(e){var t=e.target.closest('.press,.seg,.term,.fab,.em-item,.card-in');if(!t)return;var r=t.getBoundingClientRect(),d=Math.max(r.width,r.height);var sp=document.createElement('span');sp.className='ripple';sp.style.cssText='width:'+d+'px;height:'+d+'px;left:'+(e.clientX-r.left-d/2)+'px;top:'+(e.clientY-r.top-d/2)+'px';t.appendChild(sp);setTimeout(function(){sp.remove();},650);});
+/* ===== الحروف الطائرة ===== */
+var chars='مقالةنثرطاهرجديد'.split('');
+var letterCount=(innerWidth<760?8:16);
+for(var ci=0;ci<letterCount;ci++){var le=document.createElement('div');le.className='lt';le.textContent=chars[Math.floor(Math.random()*chars.length)];
+ var szV=(4+Math.random()*5);
+ le.style.cssText='width:'+szV+'vmin;height:'+szV+'vmin;font-size:'+(szV*.5)+'vmin;left:'+(Math.random()*95)+'%;animation-duration:'+(18+Math.random()*24)+'s;animation-delay:-'+(Math.random()*26)+'s';
+ document.getElementById('letters').appendChild(le);}
+/* ===== مشغّلات الاختبار الشامل (قائمة 🎛 + شريحة الختام) ===== */
+(function(){
+ var em=document.getElementById('edgeMenu');
+ var b=document.createElement('button');b.className='em-item';b.innerHTML='<span class="ic">🎓</span>اختبار شامل';
+ b.onclick=function(){closeEM();startExam();};
+ var sep=em.querySelector('.em-sep');if(sep)em.insertBefore(b,sep);else em.appendChild(b);
+ var end=deck.querySelector('.end');
+ if(end){var eb=document.createElement('button');eb.className='ebtn press';eb.style.marginInlineStart='.5rem';eb.textContent='🎓 اختبار شامل نهائي';eb.onclick=startExam;end.appendChild(eb);}
+})();
+/* ===== الإقلاع ===== */
+gateSlides.forEach(function(g,si){renderGate(si);});
+refreshLocks();
+applyScale();
+(function(){var s=null;try{s=localStorage.getItem(MODE_KEY);}catch(e){}applyMode(s&&MODES[s]?s:detectMode());})();
+goTo(0);
+addEventListener('load',function(){if(!deck.children.length){document.body.insertAdjacentHTML('beforeend','<div style="position:fixed;inset:0;z-index:99998;background:#fff;color:#a00;display:flex;align-items:center;justify-content:center;font-family:monospace">لم يُبنَ المحتوى — راجع رسالة الخطأ أسفل الشاشة</div>');}});
+</script>
+</body>
+</html>
