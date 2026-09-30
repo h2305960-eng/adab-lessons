@@ -20,7 +20,14 @@
       "title": "الجزء الثاني",
       "subtitle": "٧ مواضيع جديدة",
       "status": "coming",
-      "lessons": []
+      "lessons": [  {"id":"khafaji","title":"المسرحية والخفاجي"},
+        {"id":"nathr","title":"النثر و القصة القصيرة"},
+        {"id":"takarli","title":"فؤاد التكرلي"},
+        {"id":"novel","title":"الرواية ونشأتها"},
+        {"id":"ali jawad","title":"المقالة وعلي جواد"},
+        {"id":"taha hussien ","title":"فن السيرة وطه حسين"},
+  
+      ]
     }
   ]
 }
