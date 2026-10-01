@@ -3,9 +3,11 @@
     {
       "id": "part1",
       "title": "الجزء الأول",
-      "subtitle": "٨ مواضيع من الأدب الحديث",
+      "subtitle": "10 مواضيع من الأدب الحديث",
       "status": "open",
-      "lessons": [
+      "lessons": [  
+        {"id":"adab","title":"الادب العربي الحديث"},
+        {"id":"habubi","title":"محمد سعيد الحبوبي"},
         {"id":"sharqi","title":"علي الشرقي"},
         {"id":"hafiz","title":"حافظ إبراهيم"},
         {"id":"jawahiri","title":"الجواهري ونعيمة"},
@@ -18,7 +20,7 @@
     {
       "id": "part2",
       "title": "الجزء الثاني",
-      "subtitle": "٧ مواضيع جديدة",
+      "subtitle": "6 مواضيع جديدة",
       "status": "open",
       "lessons": [
         {"id":"khafaji","title":"المسرحية والخفاجي"},
