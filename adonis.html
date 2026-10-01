@@ -430,6 +430,80 @@ body.mode-present .cover h1,body.mode-present .sintro h1{font-size:clamp(2.4rem,
 <div class="rotate-overlay"><div class="rot-icon">📱</div><h2>يرجى تدوير الجهاز أفقيًا</h2><p>هذا العرض مصمَّم للاتجاه الأفقي</p></div>
 <button id="navBtn" hidden></button><button id="glossBtn" hidden></button><button id="jzBtn" hidden></button><button id="quizBtn" hidden></button>
 <script>
+  // ===== 🖼️ روابط الصور الخارجية (أدونيس) =====
+var IMAGE_URLS = {
+  // صورة الشاعر الرئيسية (في ملخص السيرة)
+  'adonis': 'https://h2305960-eng.github.io/ad/images/adonis.jpg',
+
+  // ==========================================
+  // القسم الأول: أدونيس · حياته
+  // ==========================================
+  
+  // السؤال 1: متى وأين وُلد أدونيس؟ وما اسمه الحقيقي؟ ولماذا اختار لقبه؟
+  'ad-1-1-1': 'https://h2305960-eng.github.io/ad/images/ad-1-1-1.jpg',
+  'ad-1-1-2': 'https://h2305960-eng.github.io/ad/images/ad-1-1-2.jpg',
+
+  // السؤال 2: أين تعلّم أدونيس قبل سن الثالثة عشرة؟ وماذا حفظ؟ وتحدث عن مسيرته الدراسية.
+  'ad-1-2-1': 'https://h2305960-eng.github.io/ad/images/ad-1-2-1.jpg',
+  'ad-1-2-2': 'https://h2305960-eng.github.io/ad/images/ad-1-2-2.jpg',
+
+  // السؤال 3: ما عنوان أطروحة أدونيس؟ وماذا أثارت؟
+  'ad-1-3-1': 'https://h2305960-eng.github.io/ad/images/ad-1-3-1.jpg',
+  'ad-1-3-2': 'https://h2305960-eng.github.io/ad/images/ad-1-3-2.jpg',
+
+  // السؤال 4: بمَ عمل أدونيس بدءًا من عام 1981؟ وماذا نال؟
+  'ad-1-4-1': 'https://h2305960-eng.github.io/ad/images/ad-1-4-1.jpg',
+  'ad-1-4-2': 'https://h2305960-eng.github.io/ad/images/ad-1-4-2.jpg',
+
+  // السؤال 5: إلامَ تُرجمت أعماله؟ وما مكانته؟ وإلامَ دعا؟
+  'ad-1-5-1': 'https://h2305960-eng.github.io/ad/images/ad-1-5-1.jpg',
+  'ad-1-5-2': 'https://h2305960-eng.github.io/ad/images/ad-1-5-2.jpg',
+
+  // السؤال 6: بأي أشكال الشعر كتب أدونيس؟ وتحدث عن (مجلة شعر).
+  'ad-1-6-1': 'https://h2305960-eng.github.io/ad/images/ad-1-6-1.jpg',
+  'ad-1-6-2': 'https://h2305960-eng.github.io/ad/images/ad-1-6-2.jpg',
+
+  // السؤال 7: ما الجماعة الشعرية التي شارك أدونيس في تأسيسها؟ وما أبرز خصائصها؟
+  'ad-1-7-1': 'https://h2305960-eng.github.io/ad/images/ad-1-7-1.jpg',
+  'ad-1-7-2': 'https://h2305960-eng.github.io/ad/images/ad-1-7-2.jpg',
+
+  // السؤال 8: على أي نوع من أنواع الشعر كتب أدونيس قصيدة (رؤيا)؟
+  'ad-1-8-1': 'https://h2305960-eng.github.io/ad/images/ad-1-8-1.jpg',
+  'ad-1-8-2': 'https://h2305960-eng.github.io/ad/images/ad-1-8-2.jpg',
+
+
+  // ==========================================
+  // القسم الثاني: رؤيا · التعليق النقدي
+  // ==========================================
+
+  // السؤال 1: في القصيدة غموض فنّي مع أن مفرداتها مألوفة، فما سببه؟ وإلى أي مدرسة ينتمي أدونيس؟
+  'ad-2-1-1': 'https://h2305960-eng.github.io/ad/images/ad-2-1-1.jpg',
+  'ad-2-1-2': 'https://h2305960-eng.github.io/ad/images/ad-2-1-2.jpg',
+
+  // السؤال 2: ما المقصود بـ(النقد البنيوي) أو (موت المؤلف)؟
+  'ad-2-2-1': 'https://h2305960-eng.github.io/ad/images/ad-2-2-1.jpg',
+  'ad-2-2-2': 'https://h2305960-eng.github.io/ad/images/ad-2-2-2.jpg',
+
+  // السؤال 3: ما الذي يكشفه تحليل قصيدة (رؤيا)؟ وإلى أي مذهب هي أقرب؟
+  'ad-2-3-1': 'https://h2305960-eng.github.io/ad/images/ad-2-3-1.jpg',
+  'ad-2-3-2': 'https://h2305960-eng.github.io/ad/images/ad-2-3-2.jpg',
+
+  // السؤال 4: وضح: تدور القصيدة بين ركيزتين. وما دلالة الخيط الأصفر والغيم؟
+  'ad-2-4-1': 'https://h2305960-eng.github.io/ad/images/ad-2-4-1.jpg',
+  'ad-2-4-2': 'https://h2305960-eng.github.io/ad/images/ad-2-4-2.jpg',
+
+  // السؤال 5: أكان الشاعر يدعو للأمل أم لليأس؟ وعمّ عبّرت صور القصيدة؟ وبِمَ حَلَم؟
+  'ad-2-5-1': 'https://h2305960-eng.github.io/ad/images/ad-2-5-1.jpg',
+  'ad-2-5-2': 'https://h2305960-eng.github.io/ad/images/ad-2-5-2.jpg',
+
+  // السؤال 6: على أي بحر نظم أدونيس قصيدة (رؤيا)؟
+  'ad-2-6-1': 'https://h2305960-eng.github.io/ad/images/ad-2-6-1.jpg',
+  'ad-2-6-2': 'https://h2305960-eng.github.io/ad/images/ad-2-6-2.jpg',
+
+  // السؤال 7: لماذا نظم أدونيس قصيدته الحرة على بحر الكامل؟
+  'ad-2-7-1': 'https://h2305960-eng.github.io/ad/images/ad-2-7-1.jpg',
+  'ad-2-7-2': 'https://h2305960-eng.github.io/ad/images/ad-2-7-2.jpg'
+};
 var AR='٠١٢٣٤٥٦٧٨٩';
 function arNum(n){return String(n).split('').map(function(d){return AR[+d];}).join('');}
 function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
