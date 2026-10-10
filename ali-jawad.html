@@ -402,6 +402,117 @@ body.mode-present .cover h1,body.mode-present .sintro h1{font-size:clamp(2.4rem,
 <div class="rotate-overlay"><div class="rot-icon">📱</div><h2>يرجى تدوير الجهاز أفقيًا</h2><p>هذا العرض مصمَّم للاتجاه الأفقي</p></div>
 <button id="navBtn" hidden></button><button id="glossBtn" hidden></button><button id="jzBtn" hidden></button><button id="quizBtn" hidden></button>
 <script>
+ // ===== 🖼️ روابط الصور الخارجية (المقالة · علي جواد الطاهر) =====
+var IMAGE_URLS = {
+  // صورة الكاتب الرئيسية (في ملخص السيرة)
+  'taher': 'https://example.com/images/taher.jpg',
+
+  // ==========================================
+  // الباب الأول: المقالة · مفهومها ونشأتها وأنواعها
+  // ==========================================
+
+  // السؤال 1: ما تعريف المقالة؟ وكيف تُكتب؟ وماذا تعالج؟
+  'mq-1-1-1': 'https://example.com/images/mq-1-1-1.jpg',
+  'mq-1-1-2': 'https://example.com/images/mq-1-1-2.jpg',
+
+  // السؤال 2: فيمَ نشأت المقالة؟ وبمَ ارتبطت؟
+  'mq-1-2-1': 'https://example.com/images/mq-1-2-1.jpg',
+  'mq-1-2-2': 'https://example.com/images/mq-1-2-2.jpg',
+
+  // السؤال 3: من هو منشئ المقالة الحديثة؟
+  'mq-1-3-1': 'https://example.com/images/mq-1-3-1.jpg',
+  'mq-1-3-2': 'https://example.com/images/mq-1-3-2.jpg',
+
+  // السؤال 4: متى عرف العرب فن المقالة؟ وما العوامل التي ساعدت في ظهورها؟
+  'mq-1-4-1': 'https://example.com/images/mq-1-4-1.jpg',
+  'mq-1-4-2': 'https://example.com/images/mq-1-4-2.jpg',
+
+  // السؤال 5: ما الفن العربي القديم الذي يشابه فن المقالة؟
+  'mq-1-5-1': 'https://example.com/images/mq-1-5-1.jpg',
+  'mq-1-5-2': 'https://example.com/images/mq-1-5-2.jpg',
+
+  // السؤال 6: تنقسم المقالة على نوعين، ما هما؟
+  'mq-1-6-1': 'https://example.com/images/mq-1-6-1.jpg',
+  'mq-1-6-2': 'https://example.com/images/mq-1-6-2.jpg',
+
+  // السؤال 7: ما المقالة الذاتية (الأدبية)؟ وعلامَ تعتمد؟
+  'mq-1-7-1': 'https://example.com/images/mq-1-7-1.jpg',
+  'mq-1-7-2': 'https://example.com/images/mq-1-7-2.jpg',
+
+  // السؤال 8: ما المقالة الموضوعية (العلمية)؟ وبم تُعنى؟ وعلامَ تحرص؟
+  'mq-1-8-1': 'https://example.com/images/mq-1-8-1.jpg',
+  'mq-1-8-2': 'https://example.com/images/mq-1-8-2.jpg',
+
+  // السؤال 9: ما الفرق بين المقالة الذاتية والموضوعية؟
+  'mq-1-9-1': 'https://example.com/images/mq-1-9-1.jpg',
+  'mq-1-9-2': 'https://example.com/images/mq-1-9-2.jpg',
+
+  // السؤال 10: ما أنواع المقالة؟ تحدث عنها بإيجاز.
+  'mq-1-10-1': 'https://example.com/images/mq-1-10-1.jpg',
+  'mq-1-10-2': 'https://example.com/images/mq-1-10-2.jpg',
+
+  // السؤال 11: ما شروط المقالة الأدبية؟
+  'mq-1-11-1': 'https://example.com/images/mq-1-11-1.jpg',
+  'mq-1-11-2': 'https://example.com/images/mq-1-11-2.jpg',
+
+  // السؤال 12: ما خصائص المقالة الأدبية؟
+  'mq-1-12-1': 'https://example.com/images/mq-1-12-1.jpg',
+  'mq-1-12-2': 'https://example.com/images/mq-1-12-2.jpg',
+
+
+  // ==========================================
+  // الباب الثاني: علي جواد الطاهر · حياته
+  // ==========================================
+
+  // السؤال 1: متى وأين وُلد الدكتور علي جواد الطاهر؟ وأين تلقى تعليمه؟
+  'mq-2-1-1': 'https://example.com/images/mq-2-1-1.jpg',
+  'mq-2-1-2': 'https://example.com/images/mq-2-1-2.jpg',
+
+  // السؤال 2: ماذا درس بعد الثانوية؟ وعلى يد من تتلمذ؟
+  'mq-2-2-1': 'https://example.com/images/mq-2-2-1.jpg',
+  'mq-2-2-2': 'https://example.com/images/mq-2-2-2.jpg',
+
+  // السؤال 3: ما يُعد الطاهر (ما منزلته الأدبية)؟
+  'mq-2-3-1': 'https://example.com/images/mq-2-3-1.jpg',
+  'mq-2-3-2': 'https://example.com/images/mq-2-3-2.jpg',
+
+  // السؤال 4: متى ومن أين حاز على شهادة الدكتوراه؟
+  'mq-2-4-1': 'https://example.com/images/mq-2-4-1.jpg',
+  'mq-2-4-2': 'https://example.com/images/mq-2-4-2.jpg',
+
+  // السؤال 5: متى وأين توفي علي جواد الطاهر؟
+  'mq-2-5-1': 'https://example.com/images/mq-2-5-1.jpg',
+  'mq-2-5-2': 'https://example.com/images/mq-2-5-2.jpg',
+
+  // السؤال 6: ما هي مؤلفات علي جواد الطاهر (آثاره)؟
+  'mq-2-6-1': 'https://example.com/images/mq-2-6-1.jpg',
+  'mq-2-6-2': 'https://example.com/images/mq-2-6-2.jpg',
+
+
+  // ==========================================
+  // الباب الثالث: فرقٌ بين أن تدّعي الجديد وأن تقدر عليه · التعليق النقدي
+  // ==========================================
+
+  // السؤال 1: ما عنوان مقالة الطاهر؟ وهل كان المحتوى متناسبًا مع هذا العنوان؟
+  'mq-3-1-1': 'https://example.com/images/mq-3-1-1.jpg',
+  'mq-3-1-2': 'https://example.com/images/mq-3-1-2.jpg',
+
+  // السؤال 2: ما الفكرة الرئيسة لمقالة الطاهر؟
+  'mq-3-2-1': 'https://example.com/images/mq-3-2-1.jpg',
+  'mq-3-2-2': 'https://example.com/images/mq-3-2-2.jpg',
+
+  // السؤال 3: ما الدعوات إلى التجديد الحقيقي التي حاول الطاهر أن يبينها؟
+  'mq-3-3-1': 'https://example.com/images/mq-3-3-1.jpg',
+  'mq-3-3-2': 'https://example.com/images/mq-3-3-2.jpg',
+
+  // السؤال 4: لِمَ عرض الطاهر فكرته في هذه المقالة؟
+  'mq-3-4-1': 'https://example.com/images/mq-3-4-1.jpg',
+  'mq-3-4-2': 'https://example.com/images/mq-3-4-2.jpg',
+
+  // السؤال 5: ما رأيك بمقالة الطاهر من حيث تحقق خصائص المقالة؟
+  'mq-3-5-1': 'https://example.com/images/mq-3-5-1.jpg',
+  'mq-3-5-2': 'https://example.com/images/mq-3-5-2.jpg'
+};
 var AR='٠١٢٣٤٥٦٧٨٩';
 function arNum(n){return String(n).split('').map(function(d){return AR[+d];}).join('');}
 function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
