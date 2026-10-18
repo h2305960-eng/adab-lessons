@@ -450,6 +450,122 @@ body.mode-present .cover h1,body.mode-present .sintro h1{font-size:clamp(2.4rem,
 <div class="rotate-overlay"><div class="rot-icon">📱</div><h2>يرجى تدوير الجهاز أفقيًا</h2><p>هذا العرض مصمَّم للاتجاه الأفقي</p></div>
 <button id="navBtn" hidden></button><button id="glossBtn" hidden></button><button id="jzBtn" hidden></button><button id="quizBtn" hidden></button>
 <script>
+ // ===== 📜 روابط الصور الخارجية (طه حسين · فن السيرة) =====
+var IMAGE_URLS = {
+  // صورة الشاعر الرئيسية (في ملخص السيرة)
+  'taha': 'https://example.com/images/taha.jpg',
+
+  // ==========================================
+  // القسم الأول: فن السيرة
+  // ==========================================
+
+  // السؤال 1: ما تعريف السيرة؟ وما الاسم القديم الذي عرفها العرب به؟
+  'th-1-1-1': 'https://example.com/images/th-1-1-1.jpg',
+  'th-1-1-2': 'https://example.com/images/th-1-1-2.jpg',
+
+  // السؤال 2: ما الفرق بين السيرة والترجمة؟
+  'th-1-2-1': 'https://example.com/images/th-1-2-1.jpg',
+  'th-1-2-2': 'https://example.com/images/th-1-2-2.jpg',
+
+  // السؤال 3: تنقسم السيرة على نوعين ما هما؟
+  'th-1-3-1': 'https://example.com/images/th-1-3-1.jpg',
+
+  // السؤال 4: ما هي السيرة الذاتية؟ وبم يتميز أسلوبها؟
+  'th-1-4-1': 'https://example.com/images/th-1-4-1.jpg',
+  'th-1-4-2': 'https://example.com/images/th-1-4-2.jpg',
+
+  // السؤال 5: بم تختلف السيرة الذاتية عن المذكرات واليوميات؟
+  'th-1-5-1': 'https://example.com/images/th-1-5-1.jpg',
+  'th-1-5-2': 'https://example.com/images/th-1-5-2.jpg',
+
+  // السؤال 6: ما هي السيرة الموضوعية (الغيرية)؟ ثم أعط أمثلة عليها؟
+  'th-1-6-1': 'https://example.com/images/th-1-6-1.jpg',
+  'th-1-6-2': 'https://example.com/images/th-1-6-2.jpg',
+  'th-1-6-3': 'https://example.com/images/th-1-6-3.jpg',
+
+  // السؤال 7: ما نوعا السيرة؟ وما خصائص كل منهما؟
+  'th-1-7-1': 'https://example.com/images/th-1-7-1.jpg',
+
+  // السؤال 8: ما خصائص السيرة؟ وما الدور الذي يضفيه الخيال عليها؟
+  'th-1-8-1': 'https://example.com/images/th-1-8-1.jpg',
+  'th-1-8-2': 'https://example.com/images/th-1-8-2.jpg',
+
+
+  // ==========================================
+  // القسم الثاني: طه حسين · حياته
+  // ==========================================
+
+  // السؤال 1: أين ومتى ولد طه حسين؟
+  'th-2-1-1': 'https://example.com/images/th-2-1-1.jpg',
+
+  // السؤال 2: ومتى فقد بصره؟ وما سبب ذلك؟
+  'th-2-2-1': 'https://example.com/images/th-2-2-1.jpg',
+
+  // السؤال 3: أين بدأ تعليمه؟ وماذا تعلم؟
+  'th-2-3-1': 'https://example.com/images/th-2-3-1.jpg',
+  'th-2-3-2': 'https://example.com/images/th-2-3-2.jpg',
+
+  // السؤال 4: متى التحق بالأزهر الشريف؟ وما العلوم التي تعلمها؟
+  'th-2-4-1': 'https://example.com/images/th-2-4-1.jpg',
+  'th-2-4-2': 'https://example.com/images/th-2-4-2.jpg',
+
+  // السؤال 5: أين التحق بعدما نال شهادته من الأزهر؟ ولماذا؟
+  'th-2-5-1': 'https://example.com/images/th-2-5-1.jpg',
+  'th-2-5-2': 'https://example.com/images/th-2-5-2.jpg',
+
+  // السؤال 6: متى نال شهادة الدكتوراه؟ وما عنوان أطروحته؟
+  'th-2-6-1': 'https://example.com/images/th-2-6-1.jpg',
+
+  // السؤال 7: متى أوفد إلى فرنسا؟ وماذا درس؟
+  'th-2-7-1': 'https://example.com/images/th-2-7-1.jpg',
+  'th-2-7-2': 'https://example.com/images/th-2-7-2.jpg',
+  'th-2-7-3': 'https://example.com/images/th-2-7-3.jpg',
+
+  // السؤال 8: ما اللغات التي أتقنها؟
+  'th-2-8-1': 'https://example.com/images/th-2-8-1.jpg',
+
+  // السؤال 9: بم لقب طه حسين؟
+  'th-2-9-1': 'https://example.com/images/th-2-9-1.jpg',
+
+  // السؤال 10: ما أهم مؤلفات طه حسين (آثاره)؟
+  'th-2-10-1': 'https://example.com/images/th-2-10-1.jpg',
+  'th-2-10-2': 'https://example.com/images/th-2-10-2.jpg',
+
+  // السؤال 11: متى توفي طه حسين؟
+  'th-2-11-1': 'https://example.com/images/th-2-11-1.jpg',
+
+  // السؤال 12: ماذا تعرف عن الدكتور طه حسين؟ وبم لقب؟
+  'th-2-12-1': 'https://example.com/images/th-2-12-1.jpg',
+
+
+  // ==========================================
+  // القسم الثالث: التعليق النقدي · كتاب الأيام
+  // ==========================================
+
+  // السؤال 13: عمّ يتحدث طه حسين في هذا النص؟ ما الأطوار الثلاثة؟ ما العنصران؟
+  'th-3-1-1': 'https://example.com/images/th-3-1-1.jpg',
+  'th-3-1-2': 'https://example.com/images/th-3-1-2.jpg',
+
+  // السؤال 14: ما الذي مثله الطوران الأول والثاني من حياة طه حسين؟
+  'th-3-2-1': 'https://example.com/images/th-3-2-1.jpg',
+  'th-3-2-2': 'https://example.com/images/th-3-2-2.jpg',
+
+  // السؤال 15: ما سبب الاضطراب والوجل والحيرة في الطور الثاني؟
+  'th-3-3-1': 'https://example.com/images/th-3-3-1.jpg',
+  'th-3-3-2': 'https://example.com/images/th-3-3-2.jpg',
+
+  // السؤال 16: ما الطور المفضل لدى طه حسين في حياته؟ ولماذا؟
+  'th-3-4-1': 'https://example.com/images/th-3-4-1.jpg',
+  'th-3-4-2': 'https://example.com/images/th-3-4-2.jpg',
+
+  // السؤال 17: كيف وصف طه حسين إحساسه تجاه العلم؟ (وزاري 2024)
+  'th-3-5-1': 'https://example.com/images/th-3-5-1.jpg',
+  'th-3-5-2': 'https://example.com/images/th-3-5-2.jpg',
+
+  // السؤال 18: هل استوفى طه حسين خصائص السيرة الذاتية؟ علل ذلك. (وزاري 2024)
+  'th-3-6-1': 'https://example.com/images/th-3-6-1.jpg',
+  'th-3-6-2': 'https://example.com/images/th-3-6-2.jpg'
+};
 var AR='٠١٢٣٤٥٦٧٨٩';
 function arNum(n){return String(n).split('').map(function(d){return AR[+d];}).join('');}
 function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
